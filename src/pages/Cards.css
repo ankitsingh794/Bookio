@@ -1,0 +1,107 @@
+.cards {
+    align-items: center;
+    display: flex;
+    gap: 31px;
+    position: relative;
+    width: 1280px;
+}
+
+.cards .card {
+    align-items: flex-start;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 32px;
+    position: relative;
+}
+
+.cards .image {
+    align-self: stretch;
+    background-image: url(./image.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 8px;
+    height: 341px;
+    position: relative;
+    width: 100%;
+}
+
+.cards .copy {
+    align-items: flex-start;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: var(--variable-collection-spacing-XS);
+    position: relative;
+    width: 548.44px;
+}
+
+.cards .text-wrapper {
+    color: black;
+    font-family: "Inter-Medium",Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 36px;
+    margin-top: -1.00px;
+    position: relative;
+    width: 548px;
+}
+
+.cards .div{
+    color: #828282;
+    font-family: "Inter-Regular",Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 36px;
+    position: relative;
+    width: 548px;
+}
+
+.cards .image-2 {
+    align-self: stretch;
+    background-image: url(./image-2.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 8px;
+    height: 341px;
+    position: relative;
+    width: 100%;
+}
+
+.cards .copy {
+    align-items: flex-start;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: var(--variable-collection-spacing-XS);
+    position: relative;
+    width: 547.56px;
+}
+
+.cards .text-wrapper {
+    color: black;
+    font-family: "Inter-Medium",Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 36px;
+    margin-right: -0.44px;
+    margin-top: -1.00px;
+    position: relative;
+    width: 548px;
+}
+
+.cards .p{
+    color: #828282;
+    font-family: "Inter-Regular",Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 36px;
+    margin-right: -0.44px;
+    position: relative;
+    width: 548px;
+}

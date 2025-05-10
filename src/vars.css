@@ -1,0 +1,101 @@
+:root {
+  --body-text-font-family: "Inter", Helvetica;
+  --body-text-font-size: 20px;
+  --body-text-font-style: normal;
+  --body-text-font-weight: 500;
+  --body-text-letter-spacing: 0px;
+  --body-text-line-height: 150%;
+  --button-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  --colors-black-800: rgba(0, 0, 0, 0.9);
+  --colors-border-border-default: var(--colors-border-default-default);
+  --colors-border-default-default: var(--colors-grey-200);
+  --colors-grey-200: rgba(230, 230, 230, 1);
+  --colors-text-default-default: var(--colors-black-800);
+  --colors-text-text-default: var(--colors-text-default-default);
+  --colors-white-1000: rgba(255, 255, 255, 1);
+  --small-text-font-family: "Inter", Helvetica;
+  --small-text-font-size: 16px;
+  --small-text-font-style: normal;
+  --small-text-font-weight: 500;
+  --small-text-letter-spacing: 0px;
+  --small-text-line-height: 150%;
+  --subheading-font-family: "Inter", Helvetica;
+  --subheading-font-size: 24px;
+  --subheading-font-style: normal;
+  --subheading-font-weight: 400;
+  --subheading-letter-spacing: 0px;
+  --subheading-line-height: 150%;
+  --variable-collection-spacing-m: 48px;
+  --variable-collection-spacing-s: 24px;
+  --variable-collection-spacing-SM: 32px;
+  --variable-collection-spacing-XS: 8px;
+  --body-text-font-family: "Inter", Helvetica;
+  --body-text-font-size: 20px;
+  --body-text-font-style: normal;
+  --body-text-font-weight: 500;
+  --body-text-letter-spacing: 0px;
+  --body-text-line-height: 150%;
+  --button-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  --small-text-font-family: "Inter", Helvetica;
+  --small-text-font-size: 16px;
+  --small-text-font-style: normal;
+  --small-text-font-weight: 500;
+  --small-text-letter-spacing: 0px;
+  --small-text-line-height: 150%;
+  --variable-collection-spacing-m: 48px;
+  --button-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  --colors-text-text-default: var(--colors-text-default-default);
+  --variable-collection-spacing-XS:8px;
+}
+
+/*
+
+To enable a theme in your HTML, simply add one of the following data attributes to an HTML element, like so:
+
+<body data-colors-mode="light">
+    <!-- the rest of your content -->
+</body>
+
+You can apply the theme on any DOM node, not just the `body`
+
+*/
+
+[data-colors-mode="light"] {
+  --colors-text-default-default: var(--colors-black-800);
+}
+
+[data-colors-mode="dark"] {
+  --colors-text-default-default: var(--colors-white-1000);
+}
+
+[data-colors-mode="figjam-light"] {
+  --colors-text-default-default: var(--colors-black-800);
+}
+
+[data-colors-mode="figjam-dark"] {
+  --colors-text-default-default: var(--colors-white-1000);
+}
+
+[data-colors-mode="handoff-light"] {
+  --colors-text-default-default: var(--colors-black-800);
+}
+
+[data-colors-mode="handoff-dark"] {
+  --colors-text-default-default: var(--colors-white-1000);
+}
+
+[data-colors-mode="flides-light"] {
+  --colors-text-default-default: var(--colors-black-800);
+}
+
+[data-colors-mode="flides-dark"] {
+  --colors-text-default-default: var(--colors-white-1000);
+}
+
+[data-colors-mode="sites-light"] {
+  --colors-text-default-default: var(--colors-black-800);
+}
+
+[data-colors-mode="sites-dark"] {
+  --colors-text-default-default: var(--colors-white-1000);
+}

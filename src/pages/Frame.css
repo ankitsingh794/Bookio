@@ -1,0 +1,84 @@
+.frame {
+    align-items: center;
+    display: flex;
+    gap: 32px;
+    position: relative;
+    width: 1279px;
+}
+
+.frame .card {
+    align-items: flex-start;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 24px;
+    position: relative;
+}
+
+.frame .image {
+    align-self: stretch;
+    background-image: url(./image.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 8px;
+    height: 405px;
+    position: relative;
+    width: 100%;
+}
+
+.frame .copy{
+    align-items: flex-start;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center;
+    position: relative;
+    width: 381px;
+}
+
+.frame .text-wrapper {
+    align-self: stretch;
+    color: black;
+    font-family: "Inter-Medium",Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 36px;
+    margin-top: -1.00px;
+    position: relative;
+}
+
+.frame .div {
+    align-self: stretch;
+    color: #828282;
+    font-family: "Inter-Medium",Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 36px;
+    position: relative;
+}
+
+.frame .image-2 {
+    align-self: stretch;
+    background-image: url(./image-2.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 8px;
+    height: 405px;
+    position: relative;
+    width: 100%;
+}
+
+.frame .image-3 {
+    align-self: stretch;
+    background-image: url(./image-3.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 8px;
+    height: 405px;
+    position: relative;
+    width: 100%;
+}

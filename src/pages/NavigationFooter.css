@@ -1,0 +1,31 @@
+.navigation-footer {
+    background-color: #ffffff;
+    height: 264px;
+    position: relative;
+    width: 1440px;
+}
+
+.navigation-footer .items {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: var(--variable-collection-spacing-s);
+    justify-content: center;
+    left: 736px;
+    position: absolute;
+    top: 48px;
+    width: 187px;
+}
+
+.navigation-footer .text-wrapper {
+    align-self: stretch;
+    color: #000000;
+    font-family: var(--small-text-font-family);
+    font-size: var(--small-text-font-size);
+    font-weight: var(--small-text-font-weight);
+    letter-spacing: var(--small-text-letter-spacing);
+    line-height: var(--small-text-line-height);
+    margin-top: -1.00px;
+    position: relative;
+}
+
