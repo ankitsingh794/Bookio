@@ -3,7 +3,9 @@
     display: flex;
     gap: 32px;
     position: relative;
-    width: 1279px;
+    width: 1400px;
+    top: 1450px;
+    left: 30px;
 }
 
 .frame .card {

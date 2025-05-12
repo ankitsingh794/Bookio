@@ -29,23 +29,9 @@
   --variable-collection-spacing-s: 24px;
   --variable-collection-spacing-SM: 32px;
   --variable-collection-spacing-XS: 8px;
-  --body-text-font-family: "Inter", Helvetica;
-  --body-text-font-size: 20px;
-  --body-text-font-style: normal;
-  --body-text-font-weight: 500;
-  --body-text-letter-spacing: 0px;
-  --body-text-line-height: 150%;
-  --button-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
-  --small-text-font-family: "Inter", Helvetica;
-  --small-text-font-size: 16px;
-  --small-text-font-style: normal;
-  --small-text-font-weight: 500;
-  --small-text-letter-spacing: 0px;
-  --small-text-line-height: 150%;
-  --variable-collection-spacing-m: 48px;
-  --button-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
-  --colors-text-text-default: var(--colors-text-default-default);
-  --variable-collection-spacing-XS:8px;
+  --collection-1-boolean: initial;
+  --collection-1-color: rgba(255,255,255,1);
+  --collection-1-number: 0px;
 }
 
 /*

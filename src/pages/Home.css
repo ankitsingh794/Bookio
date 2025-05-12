@@ -8,13 +8,13 @@
 
 .frame-screen .home-wrapper {
   background-color: #ffffff;
-  height: 4931px;
+  height: 5000px;
   width: 1440px;
 }
 
 .frame-screen .home {
   background-color: #ffffff;
-  height: 4931px;
+  height: 4750px;
   position: relative;
 }
 
@@ -35,7 +35,7 @@
   height: 683px;
   left: 79px;
   position: absolute;
-  top: 479px;
+  top: 350px;
   width: 1261px;
 }
 
@@ -68,7 +68,7 @@
   mix-blend-mode: difference;
   padding: 20px 32px;
   position: absolute;
-  top: 607px;
+  top: 647px;
 }
 
 .frame-screen .text-wrapper-21 {
@@ -105,7 +105,7 @@
   height: 704px;
   left: 736px;
   position: absolute;
-  top: 2198px;
+  top: 2250px;
   width: 704px;
 }
 
@@ -118,7 +118,7 @@
   letter-spacing: -0.96px;
   line-height: normal;
   position: absolute;
-  top: 3081px;
+  top: 3100px;
   width: 624px;
 }
 
@@ -141,7 +141,7 @@
   gap: 16px;
   left: 79px;
   position: absolute;
-  top: 2831px;
+  top: 2970px;
 }
 
 .frame-screen .button-3 {
@@ -189,7 +189,7 @@
   height: 58px;
   left: 80px;
   position: absolute;
-  top: 316px;
+  top: 150px;
   width: 844px;
 }
 
@@ -230,3 +230,4 @@
   top: 57px;
   width: 654px;
 }
+

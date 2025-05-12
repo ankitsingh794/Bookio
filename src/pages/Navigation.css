@@ -3,7 +3,9 @@
   height: 208px;
   mix-blend-mode: difference;
   position: relative;
-  width: 1440px;
+  left: -41px;
+  width: 1550px;
+  align-self: stretch;
 }
 
 .navigation .items {
@@ -66,7 +68,6 @@
   letter-spacing: 0;
   line-height: 210px;
   position: absolute;
-  top: 43px;
   white-space: nowrap;
   width: 492px;
 }

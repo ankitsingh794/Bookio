@@ -4,6 +4,8 @@
     gap: 31px;
     position: relative;
     width: 1280px;
+    top: 2000px;
+    left: 75px;
 }
 
 .cards .card {
