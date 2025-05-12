@@ -1,6 +1,6 @@
 :root {
   --body-text-font-family: "Inter", Helvetica;
-  --body-text-font-size: 20px;
+  --body-text-font-size: 15px;
   --body-text-font-style: normal;
   --body-text-font-weight: 500;
   --body-text-letter-spacing: 0px;
@@ -32,6 +32,14 @@
   --collection-1-boolean: initial;
   --collection-1-color: rgba(255,255,255,1);
   --collection-1-number: 0px;
+  --m3-body-large-font-family: "Roboto",Helvetica;
+  --m3-body-large-font-size: 16px;
+  --m3-body-large-font-style: normal;
+  --m3-body-large-font-weight: 400;
+  --m3-body-large-letter-spacing: 0.5px;
+  --m3-body-large-line-height: 24px;
+  --m3-schemes-on-surface: rgba(29,27,32,1);
+  --m3-state-layers-on-surface-opacity-08: rgba(29,27,32,0.08);
 }
 
 /*
@@ -84,4 +92,177 @@ You can apply the theme on any DOM node, not just the `body`
 
 [data-colors-mode="sites-dark"] {
   --colors-text-default-default: var(--colors-white-1000);
+}
+
+[data-m3-mode="light"] {
+  --m3--schemes-on-surface: rgba(29,27,32,1);
+  --m3-state-layer-on-suface-opacity-08: rgba(29,27,32,0.08);
+}
+
+
+[data-m3-mode="light-high-contrast"] {
+  --m3--schemes-on-surface: rgba(0,0,0,1);
+  --m3-state-layer-on-suface-opacity-08: rgba(0,0,0,0.08);
+}
+
+
+[data-m3-mode="light-medium-contrast"] {
+  --m3--schemes-on-surface: rgba(29,27,32,1);
+  --m3-state-layer-on-suface-opacity-08: rgba(29,27,32,0.08);
+}
+
+[data-m3-mode="dark"] {
+  --m3--schemes-on-surface: rgba(230,224,233,1);
+  --m3-state-layer-on-suface-opacity-08: rgba(230,224,233,0.08);
+}
+
+[data-m3-mode="dark-high-contrast"] {
+  --m3--schemes-on-surface: rgba(255,255,255,1);
+  --m3-state-layer-on-suface-opacity-08: rgba(255,255,255,0.08);
+}
+
+
+[data-m3-mode="dark-medium-contrast"] {
+  --m3--schemes-on-surface: rgba(255,249,255,1);
+  --m3-state-layer-on-suface-opacity-08: rgba(255,249,255,0.08);
+}
+
+
+[data-m3-mode="monochrome-LT"] {
+  --m3--schemes-on-surface: rgba(27,27,27,1);
+  --m3-state-layer-on-suface-opacity-08: rgba(27,27,27,0.08);
+}
+
+[data-m3-mode="monochrome-DT"] {
+  --m3--schemes-on-surface: rgba(226,226,226,1);
+  --m3-state-layer-on-suface-opacity-08: rgba(226,226,226,0.08);
+}
+
+
+[data-m3-mode="pink-LT"] {
+  --m3--schemes-on-surface: rgba(33,25,28,1);
+  --m3-state-layer-on-suface-opacity-08: rgba(33,25,28,0.08);
+}
+
+[data-m3-mode="pink-DT"] {
+  --m3--schemes-on-surface: rgba(238,223,227,1);
+  --m3-state-layer-on-suface-opacity-08: rgba(238,223,227,0.08);
+}
+
+
+[data-m3-mode="rose-LT"] {
+  --m3--schemes-on-surface: rgba(34,25,26,1);
+  --m3-state-layer-on-suface-opacity-08: rgba(34,26,26,0.08);
+}
+
+
+[data-m3-mode="rose-DT"] {
+  --m3--schemes-on-surface: rgba(240,222,223,1);
+  --m3-state-layer-on-suface-opacity-08: rgba(240,222,223,0.08);
+}
+
+
+[data-m3-mode="red-LT"] {
+  --m3--schemes-on-surface: rgba(35,25,24,1);
+  --m3-state-layer-on-suface-opacity-08: rgba(35,25,24,0.08);
+}
+
+
+[data-m3-mode="red-DT"] {
+  --m3--schemes-on-surface: rgba(241,222,220,1);
+  --m3-state-layer-on-suface-opacity-08: rgba(241,222,220,0.08);
+}
+
+
+[data-m3-mode="orange-LT"] {
+  --m3--schemes-on-surface: rgba(34,26,21,1);
+  --m3-state-layer-on-suface-opacity-08: rgba(34,26,21,0.08);
+}
+
+[data-m3-mode="orange-DT"] {
+  --m3--schemes-on-surface: rgba(240,223,215,1);
+  --m3-state-layer-on-suface-opacity-08: rgba(240,223,215,0.08);
+}
+
+
+[data-m3-mode="yellow-LT"] {
+  --m3--schemes-on-surface: rgba(31,27,19,1);
+  --m3-state-layer-on-suface-opacity-08: rgba(31,27,19,0.08);
+}
+
+
+[data-m3-mode="yellow-DT"] {
+  --m3--schemes-on-surface: rgba(235,225,212,1);
+  --m3-state-layer-on-suface-opacity-08: rgba(235,225,212,0.08);
+}
+
+[data-m3-mode="chartreuse-LT"] {
+  --m3--schemes-on-surface: rgba(27,28,20,1);
+  --m3-state-layer-on-suface-opacity-08: rgba(27,28,20,0.08);
+}
+
+
+[data-m3-mode="chartreuse-DT"] {
+  --m3--schemes-on-surface: rgba(229,227,214,1);
+  --m3-state-layer-on-suface-opacity-08: rgba(229,227,214,0.08);
+}
+
+[data-m3-mode="green-LT"] {
+  --m3--schemes-on-surface: rgba(24,29,24,1);
+  --m3-state-layer-on-suface-opacity-08: rgba(24,29,24,0.08);
+}
+
+[data-m3-mode="green-DT"] {
+  --m3--schemes-on-surface: rgba(224,228,219,1);
+  --m3-state-layer-on-suface-opacity-08: rgba(224,228,219,0.08);
+}
+
+[data-m3-mode="teal-LT"] {
+  --m3--schemes-on-surface: rgba(23,29,27,1);
+  --m3-state-layer-on-suface-opacity-08: rgba(23,29,27,0.08);
+}
+
+[data-m3-mode="teal-DT"] {
+  --m3--schemes-on-surface: rgba(221,228,225,1);
+  --m3-state-layer-on-suface-opacity-08: rgba(221,228,225,0.08);
+}
+
+[data-m3-mode="cyan-LT"] {
+  --m3--schemes-on-surface: rgba(23,28,30,1);
+  --m3-state-layer-on-suface-opacity-08: rgba(23,28,30,0.08);
+}
+
+[data-m3-mode="cyan-DT"] {
+  --m3--schemes-on-surface: rgba(222,227,230,1);
+  --m3-state-layer-on-suface-opacity-08: rgba(222,227,230,0.08);
+}
+
+[data-m3-mode="blue-LT"] {
+  --m3--schemes-on-surface: rgba(26,27,33,1);
+  --m3-state-layer-on-suface-opacity-08: rgba(26,27,33,0.08);
+}
+
+[data-m3-mode="blue-DT"] {
+  --m3--schemes-on-surface: rgba(226,226,233,1);
+  --m3-state-layer-on-suface-opacity-08: rgba(226,226,233,0.08);
+}
+
+[data-m3-mode="indigo-LT"] {
+  --m3--schemes-on-surface: rgba(28,27,33,1);
+  --m3-state-layer-on-suface-opacity-08: rgba(28,27,33,0.08);
+}
+
+[data-m3-mode="indigo-DT"] {
+  --m3--schemes-on-surface: rgba(229,225,233,1);
+  --m3-state-layer-on-suface-opacity-08: rgba(229,225,233,0.08);
+}
+
+[data-m3-mode="purple-LT"] {
+  --m3--schemes-on-surface: rgba(29,26,32,1);
+  --m3-state-layer-on-suface-opacity-08: rgba(29,26,32,0.08);
+}
+
+[data-m3-mode="purple-DT"] {
+  --m3--schemes-on-surface: rgba(231,224,232,1);
+  --m3-state-layer-on-suface-opacity-08: rgba(231,224,232,0.08);
 }

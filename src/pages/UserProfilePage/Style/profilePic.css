@@ -1,0 +1,36 @@
+.profile-pic {
+    border: 3px solid;
+    border-color: #0b0b0b;
+    height: 551px;
+    position: relative;
+    width: 427px;
+}
+
+.profile-pic .image {
+    background: linear-gradient(0deg,rgba(247,247,247,1) 0%,rgba(247,247,247,1) 100%);
+    border: 5px solid;
+    border-color: black;
+    border-radius: 12px;
+    box-shadow: 0px 4px 4px #00000040;
+    height: 499px;
+    left: 4px;
+    position: absolute;
+    top: 0;
+    width: 419px;
+}
+
+.profile-pic .text-wrapper {
+    color: black;
+    font-family: "Inter-Medium",Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    left: 4px;
+    letter-spacing: 0;
+    line-height: 30px;
+    position: absolute;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 0px 4px 4px #00000040;
+    top: 507px;
+    width: 419px;
+}

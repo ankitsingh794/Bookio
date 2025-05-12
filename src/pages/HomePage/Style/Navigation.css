@@ -1,6 +1,6 @@
 .navigation {
   background-color: #a977ee;
-  height: 208px;
+  height: 170px;
   mix-blend-mode: difference;
   position: relative;
   left: -41px;
@@ -27,6 +27,7 @@
   letter-spacing: var(--body-text-letter-spacing);
   line-height: var(--body-text-line-height);
   position: relative;
+  bottom: 15px;
   white-space: nowrap;
   width: fit-content;
 }
@@ -42,6 +43,7 @@
   justify-content: center;
   padding: 14px 24px;
   position: relative;
+  bottom: 15px;
 }
 
 .navigation .div {
@@ -61,12 +63,12 @@
 .navigation .text-wrapper-2 {
   color: #000000;
   font-family: "Kranky-Regular", Helvetica;
-  font-size: 140px;
+  font-size: 90px;
   font-weight: 400;
   height: 120px;
   left: 70px;
   letter-spacing: 0;
-  line-height: 210px;
+  line-height: 170px;
   position: absolute;
   white-space: nowrap;
   width: 492px;
