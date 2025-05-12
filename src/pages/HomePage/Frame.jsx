@@ -1,5 +1,5 @@
 import React from "react";
-import "./Frame.css"
+import "./Style/Frame.css"
 
 export const Frame = () => {
     return(

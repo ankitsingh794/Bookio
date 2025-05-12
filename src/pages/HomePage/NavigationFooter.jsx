@@ -1,5 +1,5 @@
 import React from "react";
-import "./NavigationFooter.css";
+import "./Style/NavigationFooter.css";
 
 export const NavigationFooter = () => {
     return (

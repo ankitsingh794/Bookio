@@ -6,7 +6,7 @@ import { Navigation } from "./Navigation";
 import { NavigationFooter } from "./NavigationFooter";
 import { Section } from "./Section";
 import { Text } from "./Text";
-import "./Home.css";
+import "./Style/Home.css";
 
 const Home = () => {
   return (
