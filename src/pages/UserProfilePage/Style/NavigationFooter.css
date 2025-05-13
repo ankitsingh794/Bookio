@@ -3,6 +3,7 @@
     background-color: #ffffff;
     left: -41px;
     width: 1520px;
+    top: 365px;
 }
 
 .footer .navigation-footer {
@@ -24,6 +25,7 @@
 .navigation-footer .items-2,
 .navigation-footer .items-3,
 .navigation-footer .text-wrapper-2,
+.navigation-footer .text-wrapper-3,
 .navigation-footer .items-4 {
     display: flex;
     flex-direction: column;
@@ -87,10 +89,10 @@
     font-style: var(--small-text-font-style);
     font-weight: var(--subheading-font-weight);
     height: 36px;
-    left: 31px;
+    left: 29px;
     letter-spacing: var(--subheading-letter-spacing);
     line-height: var(--subheading-line-height);
     position: absolute;
-    top: 108px;
+    top: 111px;
     white-space: nowrap;
 }

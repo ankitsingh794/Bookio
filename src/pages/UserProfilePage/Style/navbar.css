@@ -3,7 +3,8 @@
     height: 144px;
     mix-blend-mode: difference;
     position: relative;
-    width: 1440px;
+    width: 1650px;
+    left: -101px;
 }
 
 .navbar .items {
@@ -11,7 +12,7 @@
     display: inline-flex;
     gap: var(--variable-collection-spacing-m);
     justify-content: flex-end;
-    left: 838px;
+    left: 1100px;
     position: absolute;
     top: 44px;
 }
@@ -29,19 +30,6 @@
     width: fit-content;
 }
 
-.navbar .building-blocks-menu-list-item {
-    background-image: url(./icon.svg) !important;
-    position: relative !important;
-}
-
-.navbar .building-block-menu-instance {
-    color: black !important;
-}
-
-.navbar .building-blocks-menu-list-item-instance {
-    background-image: url(./image.svg) !important;
-    position: relative !important;
-}
 
 .navbar .div {
     color: black;

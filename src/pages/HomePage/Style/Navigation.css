@@ -1,6 +1,6 @@
 .navigation {
   background-color: #a977ee;
-  height: 170px;
+  height: 144px;
   mix-blend-mode: difference;
   position: relative;
   left: -41px;
@@ -61,15 +61,15 @@
 }
 
 .navigation .text-wrapper-2 {
-  color: #000000;
-  font-family: "Kranky-Regular", Helvetica;
-  font-size: 90px;
-  font-weight: 400;
-  height: 120px;
-  left: 70px;
+  color: black;
+  font-family: "Inter-Medium",Arial, Helvetica, sans-serif;
+  font-size: 64px;
+  font-weight: 500;
+  height: 96px;
+  left: 23px;
   letter-spacing: 0;
-  line-height: 170px;
+  line-height: 96px;
   position: absolute;
+  top: 18px;
   white-space: nowrap;
-  width: 492px;
 }

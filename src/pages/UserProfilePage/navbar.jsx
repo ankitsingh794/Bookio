@@ -1,5 +1,5 @@
 import React from "react";
-import {BuildingBlocksMenu} from "./asset/BuildingBlocksMenu";
+import DropdownMenu from './dropDownMenu';
 import "./Style/navbar.css";
 
 export const Navbar = () => {
@@ -12,14 +12,7 @@ export const Navbar = () => {
 
                 <div className="text-wrapper">Logout</div>
 
-                <BuildingBlocksMenu
-                    buildingBlocksTypeIconClassName = "building-blocks-menu-list-item"
-                    labelText = "Settings"
-                    labelTextClassName = "building-blocks-menu-instance"
-                    showDivider = {false}
-                    stateProp = "enabled"
-                    typeIconWrapperTypeIconClassName = "building-blocks-menu-list-item-instance"
-                />
+                <DropdownMenu/>
             </div>
 
             <div className="div">Bookio</div>

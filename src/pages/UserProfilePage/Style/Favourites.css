@@ -1,0 +1,33 @@
+.favourites-container {
+  padding: 24px;
+  max-width: 900px;
+  margin: auto;
+  position: relative;
+  top: -400px;
+}
+
+.favourites-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.favourite-card {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+}
+
+.favourite-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  margin-right: 16px;
+}
+
+.favourite-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

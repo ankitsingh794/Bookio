@@ -19,7 +19,7 @@ export default function DOBPicker() {
         disableFuture
         minDate={dayjs('1900-01-01')}
         maxDate={dayjs()}
-        renderInput={(params) => <TextField {...params} className = "custom-dob-input" helperText="MM/DD/YYYY" />}
+         slotProps={{textField: {className: 'custom-dob-input',helperText: 'MM/DD/YYYY'}}}
         />
     </LocalizationProvider>
   );

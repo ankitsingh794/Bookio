@@ -9,6 +9,13 @@ export const Box = () => {
         <div className="box">
             <div className="personal-info">
                 <div className="overlap">
+                    <div className="heading">
+                            <div className="overlap-group">
+                                <Step1 className = "circular" />
+                                <div className="text-wrapper-4">Personal Information</div>
+                            </div>
+                        </div>
+
                     <div className="form">
                         <div className="input">
                             <div className="text-wrapper-2">Username/Display Name</div>
@@ -82,13 +89,6 @@ export const Box = () => {
                         <button className="button">
                             <div className="text-wrapper-3">Submit</div>
                         </button>
-                    </div>
-
-                    <div className="heading">
-                        <div className="overlap-group">
-                            <Step1 className = "circular" />
-                            <div className="text-wrapper-4">Personal Information</div>
-                        </div>
                     </div>
                 </div>
             </div>

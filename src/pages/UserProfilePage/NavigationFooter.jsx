@@ -15,13 +15,9 @@ export const NavigationFooter = () => {
                 <div className="items-4">
                     <div className="text-wrapper-2">Bookio</div>
 
-                    
+                    <div className="text-wrapper-3">Follow our socials :</div>
 
                     <div className="social-icons">
-
-                        <div className="text-wrapper-3">Follow our socials :</div>
-
-
                         <FaFacebookF className="icons"/>
 
                         <FaLinkedin className="icons"/>

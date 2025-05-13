@@ -1,13 +1,13 @@
 .box {
-    height: 680px;
+    height: 1000px;
     width: 626px;
 }
 
 .box .personal-info {
     height: 680px;
     left: 0;
-    position: fixed;
-    top: 0;
+    position: relative;
+    top: 100px;
     width: 626px;
 }
 
@@ -195,6 +195,7 @@
     margin-bottom: -208.00px;
     padding: 16px 32px;
     position: relative;
+    top: 90px;
 }
 
 .box .text-wrapper-3 {
@@ -230,7 +231,7 @@
     height: 48px !important;
     left: 335px !important;
     position: absolute !important;
-    top: 19px !important;
+    top: 10px !important;
     width: 48px !important;
 }
 

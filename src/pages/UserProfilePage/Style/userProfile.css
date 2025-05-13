@@ -1,0 +1,14 @@
+.profile-page {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.profile-page .div-3 {
+    background-color: #ffffff;
+    height: 3352px;
+    position: relative;
+    width: 1440px;
+}
