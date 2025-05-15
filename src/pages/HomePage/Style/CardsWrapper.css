@@ -30,7 +30,7 @@
 .cards-1 .customer-quote:hover,
 .cards-1 .customer-quote-2:hover,
 .cards-1 .customer-quote-3:hover {
-    background-color: beige; /* Change background color */
+    background-color: rgb(229, 241, 205); /* Change background color */
     transform: translateY(-5px); /* Slight upward movement */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
 } 

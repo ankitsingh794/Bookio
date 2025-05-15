@@ -34,24 +34,6 @@ const mockFavourites = [
         description: "Soulful singer with massive fan following.",
         image: "https://via.placeholder.com/100",
     },
-    {
-        id: 4,
-        title: "Arijit Singh",
-        description: "Soulful singer with massive fan following.",
-        image: "https://via.placeholder.com/100",
-    },
-    {
-        id: 5,
-        title: "Arijit Singh",
-        description: "Soulful singer with massive fan following.",
-        image: "https://via.placeholder.com/100",
-    },
-    {
-        id: 6,
-        title: "Arijit Singh",
-        description: "Soulful singer with massive fan following.",
-        image: "https://via.placeholder.com/100",
-    },
 ];
 
 const Favourites = () => {
@@ -83,7 +65,7 @@ const Favourites = () => {
 
             <Grid container spacing={2}>
                 {mockFavourites.map((fav) => (
-                    <Grid key={fav.id} sx={{ flex: 1 }}> {/* Updated here */}
+                    <Grid key={fav.id} sx={{ flex: 1 , flexDirection: "column"}}> {/* Updated here */}
                         <Card className="favourite-card">
                             <CardMedia
                                 component="img"

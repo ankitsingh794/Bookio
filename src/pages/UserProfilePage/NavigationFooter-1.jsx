@@ -4,13 +4,13 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
-import "./Style/NavigationFooter.css";
+import "./Style/NavigationFooter-1.css";
 
 export const NavigationFooter = () => {
     return (
-        <div className="footer">
+        <div className="footer-1">
             <Divider sx={{ backgroundColor: "#e0e0e0", height: "1px", width: "100%" }} />
-            <div className="navigation-footer">
+            <div className="navigation-footer-1">
 
                 <div className="items-4">
                     <div className="text-wrapper-2">Bookio</div>

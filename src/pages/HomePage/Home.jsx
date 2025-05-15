@@ -57,9 +57,11 @@ const Home = () => {
 
 
           <Section />
+
+          <NavigationFooter />
           
         </div>
-        <NavigationFooter />
+        
       </div>
     </div>
   );

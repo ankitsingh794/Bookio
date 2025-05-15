@@ -68,7 +68,7 @@ const DropdownMenu = () => {
                     aria-labelledby="composition-button"
                   >
                     <MenuItem onClick={handleClose}>Change password <FaUserLock style={{ marginLeft: '8px' }} /></MenuItem>
-                    <MenuItem onClick={handleClose}>Delete Account <MdDelete style={{ marginLeft: '8px' }} /></MenuItem>
+                    <MenuItem onClick={handleClose}>Delete Account <MdDelete style={{ marginLeft: '29px' }} /></MenuItem>
                     <MenuItem onClick={handleClose}>Light/Dark Mode <CiLight style={{ marginLeft: '8px' }} /> <CiDark /></MenuItem>
                   </MenuList>
                 </ClickAwayListener>

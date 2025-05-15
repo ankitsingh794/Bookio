@@ -10,7 +10,7 @@ const sectionData = [
 
 const TicketRelatedInfo = () => {
   return (
-    <Card sx={{ maxWidth: 800, margin: "auto", mt: 4, border: "1px solid #90caf9" }}>
+    <Card sx={{ maxWidth: 1200, margin: "auto", mt: 4, border: "1px solid #e0e0e0" }}>
       <CardContent>
         <Typography variant="h6" gutterBottom>
           Ticket-Related Information

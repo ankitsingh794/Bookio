@@ -3,6 +3,7 @@
     background-color: #ffffff;
     left: -41px;
     width: 1520px;
+    top: 2500px;
 }
 
 .footer .navigation-footer {
@@ -15,7 +16,7 @@
     justify-content: space-between;
     align-items: flex-start;
     gap: 10px;
-    position: relative;
+    position: inherit;
     left: 10px;
     right: 50px;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar } from "./navbar";
-import { NavigationFooter } from "./NavigationFooter";
+import { NavigationFooter } from "./NavigationFooter-1";
 import { Box } from "./personalInfo";
 import { ProfilePic } from "./profilePic";
 import TicketRelatedInfo  from "./TicketRelatedInfo";
