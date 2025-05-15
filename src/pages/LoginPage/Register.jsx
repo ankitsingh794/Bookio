@@ -4,6 +4,8 @@ import './Style/Register.css';
 
 const Register = () => {
   const [otp, setOtp] = useState(new Array(6).fill(""));
+  const [showOtp, setShowOtp] = useState(false);
+  const [otpSent, setOtpSent] = useState(false);
 
   const handleOtpChange = (element, index) => {
     if (isNaN(element.value)) return;
@@ -15,22 +17,23 @@ const Register = () => {
       element.nextSibling.focus();
     }
   }
-    const handleKeyDown = (e, index) => {
-      if (e.key === "Backspace") {
-        const newOtp = [...otp];
-        if (otp[index] === "") {
-          if (index > 0) {
-            const prevInput = e.target.previousSibling;
-            newOtp[index - 1] = "";
-            setOtp(newOtp);
-            prevInput.focus();
-          }
-        } else {
-          newOtp[index] = "";
+  const handleKeyDown = (e, index) => {
+    if (e.key === "Backspace") {
+      const newOtp = [...otp];
+      if (otp[index] === "") {
+        if (index > 0) {
+          const prevInput = e.target.previousSibling;
+          newOtp[index - 1] = "";
           setOtp(newOtp);
+          prevInput.focus();
         }
+      } else {
+        newOtp[index] = "";
+        setOtp(newOtp);
+      }
     }
   };
+
 
   return (
     <Box className="register-container">
@@ -44,20 +47,60 @@ const Register = () => {
 
         <Box className="otp-section">
           <Typography variant="subtitle1">OTP</Typography>
-          <Box className="otp-inputs">
-            {otp.map((data, index) => (
-              <input
-                key={index}
-                type="text"
-                maxLength="1"
-                className="otp-box"
-                value={data}
-                onChange={(e) => handleOtpChange(e.target, index)}
-                onKeyDown={(e) => handleKeyDown(e, index)}
-              />
-            ))}
-          </Box>
-          <Button variant="contained" size="small" className="otp-btn">Get OTP</Button>
+
+          {showOtp && (
+            <>
+              <Box className="otp-inputs">
+                {otp.map((data, index) => (
+                  <input
+                    key={index}
+                    type="text"
+                    maxLength="1"
+                    className="otp-box"
+                    value={data}
+                    onChange={(e) => handleOtpChange(e.target, index)}
+                    onKeyDown={(e) => handleKeyDown(e, index)}
+                  />
+                ))}
+              </Box>
+
+              <Button
+                variant="contained"
+                size="small"
+                className="otp-btn"
+                style={{ marginRight: "39px" }}
+              >
+                Verify
+              </Button>
+            </>
+          )}
+
+          {!otpSent ? (
+            <Button
+              variant="contained"
+              size="small"
+              onClick={() => {
+                setShowOtp(true);
+                setOtpSent(true);
+                // triggerOtpSend(); <-- call your API here
+              }}
+              className="otp-btn"
+              style={{ marginTop: "10px" }}
+            >
+              Get OTP
+            </Button>
+          ) : (
+            <Button
+              variant="outlined"
+              size="small"
+              onClick={() => {
+                // triggerOtpSend(); <-- call your API again
+              }}
+              className="otp-btn-resend-btn"
+            >
+              Resend OTP
+            </Button>
+          )}
         </Box>
 
         <Button fullWidth variant="contained" className="register-btn">

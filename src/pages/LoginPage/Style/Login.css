@@ -1,4 +1,4 @@
-.register-container {
+.login-container {
   display: flex;
   justify-content: center;
   margin-top: 40px;
@@ -6,7 +6,7 @@
   top: 100px;
 }
 
-.register-box {
+.login-box {
   width: 450px;
   padding: 24px;
   border-radius: 12px;
@@ -49,7 +49,7 @@
   color: #fff;
 }
 
-.register-btn {
+.login-btn {
   background-color: #222;
   color: white;
   margin-top: 16px;
