@@ -82,7 +82,7 @@ export const Box = () => {
                             </div>
                         </div>
 
-                        <button className="button">
+                        <button className="button" style={{marginLeft:"2rem"}}>
                             <div className="text-wrapper-3">Clear</div>
                         </button>
 

@@ -1,50 +1,48 @@
 .register-container {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
-  position: relative;
-  top: 100px;
+  align-items: center;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  height: auto;
+  box-sizing: border-box;
 }
 
 .register-box {
-  width: 450px;
-  padding: 24px;
-  border-radius: 12px;
+  width: 90vw;
+  max-width: 28rem; /* ~450px */
+  padding: 1.5rem; /* 24px */
+  border-radius: 0.75rem; /* 12px */
 }
 
 .otp-section {
-  margin: 25px 0;
+  margin: 1.5625rem 0; /* 25px */
   text-align: center;
   border: 2px solid #e0e0e0;
-  padding: 8px;
-  border-radius: 8px;
+  padding: 0.5rem; /* 8px */
+  border-radius: 0.5rem; /* 8px */
 }
 
 .otp-inputs {
   display: flex;
   justify-content: center;
-  margin: 12px 0;
-  gap: 12px;
+  margin: 0.75rem 0; /* 12px */
+  gap: 0.75rem; /* 12px */
 }
 
 .otp-box {
-  width: 40px;
-  height: 40px;
+  width: 2.5rem; /* 40px */
+  height: 2.5rem; /* 40px */
   text-align: center;
-  font-size: 20px;
+  font-size: 1.25rem; /* 20px */
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 0.375rem; /* 6px */
 }
 
 .otp-btn,
-.otp-btn-resend-btn {
-  margin-top: 8px;
-  background-color: #333;
-  color: #fff;
-}
-
+.otp-btn-resend-btn,
 .otp-btn-1 {
-  margin-top: 8px;
+  margin-top: 0.5rem; /* 8px */
   background-color: #333;
   color: #fff;
 }
@@ -52,12 +50,12 @@
 .register-btn {
   background-color: #222;
   color: white;
-  margin-top: 16px;
+  margin-top: 1rem; /* 16px */
 }
 
 .links {
   text-align: center;
-  margin-top: 12px !important;
+  margin-top: 0.75rem !important; /* 12px */
 }
 
 .links a {

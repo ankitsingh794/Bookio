@@ -35,13 +35,13 @@ const ForgPass = () => {
     };
 
     return (
-        <Box className="login-container">
-            <Paper elevation={3} className="login-box">
+        <Box className="forgot-container">
+            <Paper elevation={3} className="forgot-box">
                 <Typography variant="h4" gutterBottom>Fogot Password ?</Typography>
 
                 <TextField label="Email or Phone no" fullWidth margin="normal" />
 
-                <Button fullWidth variant="contained" className="login-btn">
+                <Button fullWidth variant="contained" className="forgot-btn">
                     Sent OTP
                 </Button>
 

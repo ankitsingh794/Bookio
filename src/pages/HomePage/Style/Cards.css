@@ -1,109 +1,75 @@
 .cards {
-    align-items: center;
-    display: flex;
-    gap: 31px;
-    position: relative;
-    width: 1280px;
-    top: 2000px;
-    left: 75px;
+  align-items: center;
+  display: flex;
+  gap: 2.15rem; /* 31px */
+  position: relative;
+  width: 88.89vw; /* 1280px assuming 1440px base width */
+  top: 115.89vw; /* 2000px relative to base width */
+  left: 5.21vw; /* 75px */
 }
 
 .cards .card {
-    align-items: flex-start;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    flex-grow: 1;
-    gap: 32px;
-    position: relative;
+  align-items: flex-start;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 2.22rem; /* 32px */
+  position: relative;
+}
+
+.cards .image,
+.cards .image-2 {
+  align-self: stretch;
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 0.5rem;
+  height: 21.31rem; /* 341px */
+  position: relative;
+  width: 100%;
 }
 
 .cards .image {
-    align-self: stretch;
-    background-image: url(./image.png);
-    background-position: 50% 50%;
-    background-size: cover;
-    border-radius: 8px;
-    height: 341px;
-    position: relative;
-    width: 100%;
+    background-image: url('https://picsum.photos/seed/c3/800/400');
+}
+
+.card .image-2 {
+    background-image: url('https://picsum.photos/seed/d4/800/400');
 }
 
 .cards .copy {
-    align-items: flex-start;
-    display: flex;
-    flex: 0 0 auto;
-    flex-direction: column;
-    gap: var(--variable-collection-spacing-XS);
-    position: relative;
-    width: 548.44px;
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: var(--variable-collection-spacing-XS);
+  position: relative;
+  width: 38.1vw; /* ~547-548px */
 }
 
-.cards .text-wrapper {
-    color: black;
-    font-family: "Inter-Medium",Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    letter-spacing: 0;
-    line-height: 36px;
-    margin-top: -1.00px;
-    position: relative;
-    width: 548px;
+.cards .text-wrapper,
+.cards .text-wrapper-2 {
+  color: black;
+  font-family: "Inter-Medium", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem; /* 24px */
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 2.25rem; /* 36px */
+  margin-top: -0.0625rem;
+  margin-right: -0.03rem;
+  position: relative;
+  width: 38.1vw; /* ~548px */
 }
 
-.cards .div{
-    color: #828282;
-    font-family: "Inter-Regular",Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    letter-spacing: 0;
-    line-height: 36px;
-    position: relative;
-    width: 548px;
-}
-
-.cards .image-2 {
-    align-self: stretch;
-    background-image: url(./image-2.png);
-    background-position: 50% 50%;
-    background-size: cover;
-    border-radius: 8px;
-    height: 341px;
-    position: relative;
-    width: 100%;
-}
-
-.cards .copy {
-    align-items: flex-start;
-    display: flex;
-    flex: 0 0 auto;
-    flex-direction: column;
-    gap: var(--variable-collection-spacing-XS);
-    position: relative;
-    width: 547.56px;
-}
-
-.cards .text-wrapper {
-    color: black;
-    font-family: "Inter-Medium",Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    letter-spacing: 0;
-    line-height: 36px;
-    margin-right: -0.44px;
-    margin-top: -1.00px;
-    position: relative;
-    width: 548px;
-}
-
-.cards .p{
-    color: #828282;
-    font-family: "Inter-Regular",Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    letter-spacing: 0;
-    line-height: 36px;
-    margin-right: -0.44px;
-    position: relative;
-    width: 548px;
+.cards .div,
+.cards .p {
+  color: #828282;
+  font-family: "Inter-Regular", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem; /* 24px */
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 2.25rem; /* 36px */
+  margin-right: -0.03rem;
+  position: relative;
+  width: 38.1vw; /* ~548px */
 }

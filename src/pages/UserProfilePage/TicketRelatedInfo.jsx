@@ -1,6 +1,7 @@
 import React from "react";
-import { Card, CardContent, Typography, Divider, List, ListItem, ListItemIcon, ListItemText } from "@mui/material";
-import { LocalOffer } from "@mui/icons-material"; // Ticket tag icon
+import "./Style/TicketRelatedInfo.css";
+import { Card, CardContent, Typography, Divider, List, ListItem, ListItemText } from "@mui/material";
+import { LocalOffer } from "@mui/icons-material";
 
 const sectionData = [
   { title: "Upcoming Bookings", items: ["Event 1", "Event 2", "Event 3"] },
@@ -10,22 +11,22 @@ const sectionData = [
 
 const TicketRelatedInfo = () => {
   return (
-    <Card sx={{ maxWidth: 1200, margin: "auto", mt: 4, border: "1px solid #e0e0e0" }}>
+    <Card className="ticket-card">
       <CardContent>
-        <Typography variant="h6" gutterBottom>
+        <Typography variant="h4" className="ticket-title" gutterBottom>
           Ticket-Related Information
         </Typography>
 
         {sectionData.map((section, idx) => (
-          <div key={idx}>
-            {idx !== 0 && <Divider sx={{ my: 2 }} />}
-            <Typography variant="subtitle1" sx={{ display: "flex", alignItems: "center", mb: 1 }}>
-              <LocalOffer fontSize="small" sx={{ mr: 1 }} />
+          <div key={idx} className="segment">
+            {idx !== 0 && <Divider className="section-divider" />}
+            <Typography variant="h6" className="section-title">
+              <LocalOffer />
               {section.title}
             </Typography>
-            <List dense disablePadding>
+            <List dense disablePadding className="section-list">
               {section.items.map((item, i) => (
-                <ListItem key={i} sx={{ pl: 4 }}>
+                <ListItem key={i} className="section-list-item">
                   <ListItemText primary={`• ${item}`} />
                 </ListItem>
               ))}

@@ -1,87 +1,82 @@
 .cards-1 {
-    align-items: flex-start;
-    display: flex;
-    gap: 16px; /* Used a fixed value to avoid dependency on variable spacing */
-    position: relative;
-    width: 1280px;
-    flex-wrap: wrap; /* Added to ensure that cards-1 wrap when space is limited */
-    top: 2250px;
-    left: 75px;
+  align-items: flex-start;
+  display: flex;
+  gap: 1rem; /* 16px */
+  position: relative;
+  width: 88.89vw; /* 1280px assuming 1440px base width */
+  flex-wrap: wrap;
+  top: 131.25vw; /* 2250px relative to base width */
+  left: 5.21vw; /* 75px */
 }
 
 .cards-1 .customer-quote,
 .cards-1 .customer-quote-2,
 .cards-1 .customer-quote-3 {
-    align-items: flex-start;
-    background-color: #ffffff;
-    border: 1px solid var(--colors-border-border-default, #dcdcdc); /* Fallback color */
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px; /* Adjusted gap for consistency */
-    margin: -1px;
-    padding: 16px;
-    position: relative;
-    flex: 1 1 calc(33% - 16px); /* 3 cards-1 per row, with spacing in between */
-    box-sizing: border-box;
-    width: 410px;
+  align-items: flex-start;
+  background-color: #ffffff;
+  border: 1px solid var(--colors-border-border-default, #dcdcdc);
+  border-radius: 0.75rem; /* 12px */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: -0.0625rem; /* -1px */
+  padding: 1rem;
+  position: relative;
+  flex: 1 1 calc(33% - 1rem); /* 3 cards per row with gaps */
+  box-sizing: border-box;
+  width: 28.47vw; /* 410px assuming 1440px base width */
 }
 
 .cards-1 .customer-quote:hover,
 .cards-1 .customer-quote-2:hover,
 .cards-1 .customer-quote-3:hover {
-    background-color: rgb(229, 241, 205); /* Change background color */
-    transform: translateY(-5px); /* Slight upward movement */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
-} 
+  background-color: rgb(229, 241, 205);
+  transform: translateY(-0.3125rem); /* -5px */
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1); /* 0 4px 12px */
+}
 
 .cards-1 .text-wrapper {
-    align-self: stretch;
-    color: black;
-    font-family: "Inter-Medium", Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    letter-spacing: 0;
-    line-height: 36px;
-    margin-top: -0.5px;
+  align-self: stretch;
+  color: black;
+  font-family: "Inter-Medium", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem; /* 24px */
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 2.25rem; /* 36px */
+  margin-top: -0.03125rem; /* -0.5px */
 }
 
 .cards-1 .avatar {
-    align-items: center;
-    display: flex;
-    gap: 16px;
-    position: relative;
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  position: relative;
 }
 
 .cards-1 .img {
-    height: 45px;
-    object-fit: cover;
-    width: 45px;
+  height: 2.8125rem; /* 45px */
+  object-fit: cover;
+  width: 2.8125rem; /* 45px */
 }
 
 .cards-1 .frame-1 {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem; /* 2px */
 }
 
-.cards-1 .div {
-    color: black;
-    font-family: var(--small-text-font-family, Arial, sans-serif);
-    font-size: var(--small-text-font-size, 14px);
-    font-weight: var(--small-text-font-weight, 400);
-    line-height: 18px;
-    white-space: nowrap;
-    width: fit-content;
+.cards-1 .div,
+.cards-1 .text-wrapper-2 {
+  color: black;
+  font-family: var(--small-text-font-family, Arial, sans-serif);
+  font-size: var(--small-text-font-size, 0.875rem); /* 14px */
+  font-weight: var(--small-text-font-weight, 400);
+  line-height: 1.125rem; /* 18px */
+  white-space: nowrap;
+  width: fit-content;
 }
 
 .cards-1 .text-wrapper-2 {
-    color: #828282;
-    font-family: var(--small-text-font-family, Arial, sans-serif);
-    font-size: var(--small-text-font-size, 14px);
-    font-weight: var(--small-text-font-weight, 400);
-    line-height: 18px;
-    white-space: nowrap;
-    width: fit-content;
+  color: #828282;
 }

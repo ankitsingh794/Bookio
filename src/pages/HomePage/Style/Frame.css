@@ -1,86 +1,66 @@
 .frame {
-    align-items: center;
-    display: flex;
-    gap: 32px;
-    position: relative;
-    width: 1400px;
-    top: 1450px;
-    left: 30px;
+  align-items: center;
+  display: flex;
+  gap: 2rem; /* 32px */
+  position: relative;
+  width: 97.22vw; /* 1400px assuming 1440px base width */
+  top: 83vw; /* 1450px assuming 1440px base width */
+  left: 2vw; /* 30px */
 }
 
 .frame .card {
-    align-items: flex-start;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    flex-grow: 1;
-    gap: 24px;
-    position: relative;
+  align-items: flex-start;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 1.5rem; /* 24px */
+  position: relative;
 }
 
-.frame .image {
-    align-self: stretch;
-    background-image: url(./image.png);
-    background-position: 50% 50%;
-    background-size: cover;
-    border-radius: 8px;
-    height: 405px;
-    position: relative;
-    width: 100%;
+.frame .image,
+.frame .image-2,
+.frame .image-3 {
+  align-self: stretch;
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 0.5rem; /* 8px */
+  height: 28.13rem; /* 405px */
+  position: relative;
+  width: 100%;
+  background-image: url('https://picsum.photos/seed/e5/800/400');
 }
 
-.frame .copy{
-    align-items: flex-start;
-    display: flex;
-    flex: 0 0 auto;
-    flex-direction: column;
-    gap: 4px;
-    justify-content: center;
-    position: relative;
-    width: 381px;
+.frame .copy {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 0.25rem; /* 4px */
+  justify-content: center;
+  position: relative;
+  width: 26.46vw; /* 381px assuming 1440px base width */
 }
 
 .frame .text-wrapper {
-    align-self: stretch;
-    color: black;
-    font-family: "Inter-Medium",Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    letter-spacing: 0;
-    line-height: 36px;
-    margin-top: -1.00px;
-    position: relative;
+  align-self: stretch;
+  color: black;
+  font-family: "Inter-Medium", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem; /* 24px */
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 2.25rem; /* 36px */
+  margin-top: -0.0625rem; /* -1px */
+  position: relative;
 }
 
 .frame .div {
-    align-self: stretch;
-    color: #828282;
-    font-family: "Inter-Medium",Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    letter-spacing: 0;
-    line-height: 36px;
-    position: relative;
-}
-
-.frame .image-2 {
-    align-self: stretch;
-    background-image: url(./image-2.png);
-    background-position: 50% 50%;
-    background-size: cover;
-    border-radius: 8px;
-    height: 405px;
-    position: relative;
-    width: 100%;
-}
-
-.frame .image-3 {
-    align-self: stretch;
-    background-image: url(./image-3.png);
-    background-position: 50% 50%;
-    background-size: cover;
-    border-radius: 8px;
-    height: 405px;
-    position: relative;
-    width: 100%;
+  align-self: stretch;
+  color: #828282;
+  font-family: "Inter-Medium", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem; /* 24px */
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 2.25rem; /* 36px */
+  position: relative;
 }

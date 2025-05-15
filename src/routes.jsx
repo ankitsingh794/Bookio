@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './pages/HomePage/Home';
 import Profilepage from './pages/UserProfilePage/userProfile';
 import  LogHub  from './pages/LoginPage/LogHub';
+import Event from './pages/ListPage.jsx/Event';
 // import other pages as needed
 
 
@@ -11,6 +12,7 @@ const AppRoutes = () => {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path='/profile' element={<Profilepage/>} />
+      <Route path='/event' element={<Event/>}/>
       <Route path='/loghub' element = {<LogHub/>}/>
     </Routes>
   );

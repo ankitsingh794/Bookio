@@ -2,11 +2,11 @@
     align-items: flex-end;
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    gap: 3.33rem; /* 48px */
     position: relative;
-    width: 516px;
-    top: 1720px;
-    left: 50px;
+    width: 36rem; /* 516px */
+    top: 92rem; /* 1720px */
+    left: 3.47rem; /* 50px */
 }
 
 .text .div {
@@ -15,54 +15,54 @@
     display: flex;
     flex: 0 0 auto;
     flex-direction: column;
-    gap: 8px;
+    gap: 0.56rem; /* 8px */
     justify-content: center;
     position: relative;
     width: 100%;
 }
 
-.text .text-wrapper{
+.text .text-wrapper {
     color: #000000;
-    font-family: "Inter-Medium",Arial, Helvetica, sans-serif;
-    font-family: 24px;
+    font-family: "Inter-Medium", Arial, Helvetica, sans-serif;
+    font-size: 1.67rem; /* 24px */
     font-weight: 500;
     letter-spacing: 0;
-    line-height: 36px;
-    margin-top: -1.00px;
+    line-height: 2.57rem; /* 36px */
+    margin-top: -0.07rem; /* -1px */
     position: relative;
-    width: 515px;
+    width: 35.94rem; /* 515px */
 }
 
 .text .p {
     color: #828282;
-    font-family: "Inter-Medium",Arial, Helvetica, sans-serif;
-    font-size: 24px;
+    font-family: "Inter-Medium", Arial, Helvetica, sans-serif;
+    font-size: 1.67rem; /* 24px */
     font-weight: 400;
     letter-spacing: 0;
-    line-height: 36px;
+    line-height: 2.57rem; /* 36px */
     position: relative;
-    width: 515px;
+    width: 35.94rem; /* 515px */
 }
 
 .text .text-wrapper-2 {
     align-self: stretch;
     color: #000000;
-    font-family: "Inter-Medium",Arial, Helvetica, sans-serif;
-    font-size: 24px;
+    font-family: "Inter-Medium", Arial, Helvetica, sans-serif;
+    font-size: 1.67rem; /* 24px */
     font-weight: 500;
     letter-spacing: 0;
-    line-height: 36px;
-    margin-top: -1.00px;
+    line-height: 2.57rem; /* 36px */
+    margin-top: -0.07rem; /* -1px */
     position: relative;
 }
 
 .text .text-wrapper-3 {
     align-self: stretch;
     color: #828282;
-    font-family: "Inter-Medium",Arial, Helvetica, sans-serif;
-    font-size: 24px;
+    font-family: "Inter-Medium", Arial, Helvetica, sans-serif;
+    font-size: 1.67rem; /* 24px */
     font-weight: 400;
     letter-spacing: 0;
-    line-height: 36px;
+    line-height: 2.57rem; /* 36px */
     position: relative;
 }

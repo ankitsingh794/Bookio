@@ -1,0 +1,44 @@
+.ticket-card {
+  max-width: 90vw;
+  margin: auto; /* mt: 4 (~1rem * 4) */
+  border: 1px solid #e0e0e0;
+  height: auto;
+}
+
+.ticket-title {
+  margin-bottom: 0.5rem ;
+  font-weight: 600;
+  margin-top: 2rem;
+  text-decoration: underline;
+}
+
+.section-divider {
+  margin: 1rem 0;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  margin: 1rem !important;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.section-title svg {
+  margin-right: 0.5rem;
+  font-size: 1rem !important;
+}
+
+.section-list {
+  padding-left: 0;
+  height: auto;
+}
+
+.section-list-item {
+  padding-left: 2rem; /* matches sx={{ pl: 4 }} where 1 unit = 8px */
+}
+
+.segment {
+    height: fit-content;
+    padding: 0.5rem;
+}

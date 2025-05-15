@@ -12,8 +12,12 @@ export const Profilepage = () => {
         <div className="profile-page">
             <div className="div-3">
                 <Navbar />
-                <Box />
-                <ProfilePic />
+                
+                <div className="container">
+                    <Box />
+                    <ProfilePic/>
+                </div>
+                
                 <Favourites />
                 <TicketRelatedInfo/>
                 <NavigationFooter/>

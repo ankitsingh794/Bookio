@@ -1,66 +1,73 @@
-.login-container {
+.forgot-container {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
-  position: relative;
-  top: 100px;
+  align-items: center;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  height: auto;
+  box-sizing: border-box;
 }
 
-.login-box {
-  width: 450px;
-  padding: 24px;
-  border-radius: 12px;
+.forgot-box {
+  width: 100%;
+  max-width: 28rem; /* ~450px */
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  box-sizing: border-box;
 }
 
 .otp-section {
-  margin: 25px 0;
+  margin: 1.5rem 0;
   text-align: center;
   border: 2px solid #e0e0e0;
-  padding: 8px;
-  border-radius: 8px;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
 }
 
 .otp-inputs {
   display: flex;
   justify-content: center;
-  margin: 12px 0;
-  gap: 12px;
+  margin: 0.75rem 0;
+  gap: 0.75rem;
 }
 
 .otp-box {
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   text-align: center;
-  font-size: 20px;
+  font-size: 1.25rem;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 0.375rem;
 }
 
 .otp-btn,
-.otp-btn-resend-btn {
-  margin-top: 8px;
-  background-color: #333;
-  color: #fff;
-}
-
-.otp-btn-1 {
-  margin-top: 8px;
-  background-color: #333;
-  color: #fff;
-}
-
+.otp-btn-resend-btn,
+.otp-btn-1,
 .login-btn {
+  margin-top: 0.5rem;
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.gorgot-btn {
+  margin-top: 1rem;
   background-color: #222;
-  color: white;
-  margin-top: 16px;
 }
 
 .links {
   text-align: center;
-  margin-top: 12px !important;
+  margin-top: 0.75rem;
 }
 
 .links a {
   color: #333;
   text-decoration: none;
+  font-size: 0.95rem;
 }

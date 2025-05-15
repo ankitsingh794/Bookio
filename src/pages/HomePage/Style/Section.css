@@ -1,43 +1,47 @@
 .section {
   background-color: #f7f7f7;
-  height: 236px;
+  height: 16.44rem; /* 236px / 14.36 (default root font-size) */
   position: relative;
-  width: 1440px;
-  top: 2470px;
+  width: 100vw; /* Full viewport width */
+  top: 131.9rem; /* 2470px */
+  margin: 0 auto; /* Center horizontally if smaller screen */
 }
 
 .section .buttons {
   align-items: center;
   display: inline-flex;
-  gap: 24px;
+  gap: 1.67rem; /* 24px */
   justify-content: flex-end;
-  left: 864px;
+  left: 60vw; /* ~864px assuming 1440px width */
   position: absolute;
-  top: 80px;
+  top: 5.56rem; /* 80px */
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .section .button {
   all: unset;
   align-items: center;
   background-color: #000000;
-  border-radius: 8px;
+  border-radius: 0.56rem; /* 8px */
   box-shadow: var(--button-shadow);
   box-sizing: border-box;
   display: inline-flex;
   flex: 0 0 auto;
-  gap: 8px;
-  padding: 20px 32px;
+  gap: 0.56rem; /* 8px */
+  padding: 1.39rem 2.22rem; /* 20px 32px */
   position: relative;
+  cursor: pointer;
 }
 
 .section .text-wrapper {
   color: #ffffff;
-  font-family: "Inter-Medium", Helvetica;
-  font-size: 24px;
+  font-family: "Inter-Medium", Helvetica, sans-serif;
+  font-size: 1.67rem; /* 24px */
   font-weight: 500;
   letter-spacing: 0;
-  line-height: 36px;
-  margin-top: -1.00px;
+  line-height: 2.57rem; /* 36px */
+  margin-top: -0.07rem; /* -1px */
   position: relative;
   white-space: nowrap;
   width: fit-content;
@@ -47,24 +51,24 @@
   all: unset;
   align-items: center;
   background-color: #e6e6e6;
-  border-radius: 8px;
+  border-radius: 0.56rem; /* 8px */
   box-shadow: var(--button-shadow);
   box-sizing: border-box;
   display: inline-flex;
   flex: 0 0 auto;
-  gap: 8px;
-  padding: 20px 32px;
+  gap: 0.56rem; /* 8px */
+  padding: 1.39rem 2.22rem; /* 20px 32px */
   position: relative;
 }
 
 .section .div {
   color: #000000e6;
-  font-family: "Inter-Medium", Helvetica;
-  font-size: 24px;
+  font-family: "Inter-Medium", Helvetica, sans-serif;
+  font-size: 1.67rem; /* 24px */
   font-weight: 500;
   letter-spacing: 0;
-  line-height: 36px;
-  margin-top: -1.00px;
+  line-height: 2.57rem; /* 36px */
+  margin-top: -0.07rem; /* -1px */
   position: relative;
   white-space: nowrap;
   width: fit-content;
@@ -72,13 +76,15 @@
 
 .section .text-wrapper-2 {
   color: #000000;
-  font-family: "Inter-SemiBold", Helvetica;
-  font-size: 48px;
+  font-family: "Inter-SemiBold", Helvetica, sans-serif;
+  font-size: 3.33rem; /* 48px */
   font-weight: 600;
-  left: 80px;
-  letter-spacing: -0.96px;
+  left: 5.56rem; /* 80px */
+  letter-spacing: -0.067rem; /* -0.96px */
   line-height: normal;
   position: absolute;
-  top: 88px;
-  width: 625px;
+  top: 6.13rem; /* 88px */
+  width: 43.4rem; /* 625px */
+  max-width: 100%;
+  white-space: normal;
 }

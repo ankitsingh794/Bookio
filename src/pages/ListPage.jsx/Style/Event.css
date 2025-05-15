@@ -1,4 +1,4 @@
-.loghub {
+.event {
     background-color: #ffffff;
     display: flex;
     flex-direction: row;
@@ -6,10 +6,9 @@
     width: 100%;
 }
 
-.loghub .div-4 {
+.event .div-5 {
     background-color: white;
-    min-height: 100vh;
-    height: auto;
+    height: 100%;
     position: relative;
-    width: 100vw;
+    width: 100%;
 }

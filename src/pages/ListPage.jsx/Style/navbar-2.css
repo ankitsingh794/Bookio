@@ -1,0 +1,32 @@
+.navbar-2 {
+  background-color: #a977ee;
+  height: 9rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  position: relative;
+  mix-blend-mode: difference;
+}
+
+.navbar-2 .div {
+  color: black;
+  font-family: "Inter-Medium", Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.navbar-2 .items {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.navbar-2 .text-wrapper {
+  color: black;
+  font-size: 1rem;
+  white-space: nowrap;
+}

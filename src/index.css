@@ -1,13 +1,9 @@
-/* src/index.css */
-
-/* Tailwind CSS Directives should be at the top */
+/* Tailwind CSS Directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Custom global styles can come after Tailwind directives */
-
-
+/* Custom Global Styles */
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -23,45 +19,45 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  color: #000000;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Prevent images or media from overflowing */
+img, video, canvas {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Anchor styles */
 a {
   font-weight: 500;
   color: #646cff;
-  text-decoration: inherit;
+  text-decoration: none;
 }
 
 a:hover {
   color: #535bf2;
 }
 
-/* body {
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-  margin-right: 0;
-  display: flex;
-  flex-direction: row;
-  place-items: center;
-  min-height: 100vh;
-} */
-
-
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  min-height: 100vh;
-  overflow-x: hidden;
-}
-
-
-
+/* Headings */
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
 
+/* Buttons */
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -70,6 +66,7 @@ button {
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
+  color: #ffffff;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -83,17 +80,30 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/* Responsive Tweaks */
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
   }
 
+  button {
+    background-color: #f9f9f9;
+    color: #000000;
+  }
+
   a:hover {
     color: #747bff;
   }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2em;
+  }
 
   button {
-    background-color: #f9f9f9;
+    padding: 0.5em 1em;
+    font-size: 0.9em;
   }
 }

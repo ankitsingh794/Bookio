@@ -1,46 +1,45 @@
 .navbar {
-    background-color: #a977ee;
-    height: 144px;
-    mix-blend-mode: difference;
-    position: relative;
-    width: 1650px;
-    left: -101px;
+  background-color: #a977ee;
+  height: 9rem; /* 144px */
+  mix-blend-mode: difference;
+  position: relative;
+  width: 100vw; /* Full viewport width */
+  left: 0;
+  overflow-x: hidden;
 }
 
 .navbar .items {
-    align-items: center;
-    display: inline-flex;
-    gap: var(--variable-collection-spacing-m);
-    justify-content: flex-end;
-    left: 1100px;
-    position: absolute;
-    top: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.5rem; /* Assuming --variable-collection-spacing-m ~24px */
+  position: absolute;
+  right: 2rem; /* Instead of left: 1100px */
+  top: 3rem; /* 44px */
 }
 
 .navbar .text-wrapper {
-    color: black;
-    font-family: var(--body-text-font-family);
-    font-size: var(--body-text-font-size);
-    font-style: var(--body-text-font-style);
-    font-weight: var(--body-text-font-weight);
-    letter-spacing: var(--body-text-letter-spacing);
-    line-height: var(--body-text-line-height);
-    position: relative;
-    white-space: nowrap;
-    width: fit-content;
+  color: black;
+  font-family: var(--body-text-font-family, "Arial, sans-serif");
+  font-size: var(--body-text-font-size, 1rem);
+  font-style: var(--body-text-font-style, normal);
+  font-weight: var(--body-text-font-weight, 400);
+  letter-spacing: var(--body-text-letter-spacing, normal);
+  line-height: var(--body-text-line-height, 1.5);
+  white-space: nowrap;
+  width: fit-content;
+  position: relative;
 }
 
-
 .navbar .div {
-    color: black;
-    font-family: "Inter-Medium",Arial, Helvetica, sans-serif;
-    font-size: 64px;
-    font-weight: 500;
-    height: 96px;
-    left: 78px;
-    letter-spacing: 0;
-    line-height: 96px;
-    position: absolute;
-    top: 18px;
-    white-space: nowrap;
+  color: black;
+  font-family: "Inter-Medium", Arial, Helvetica, sans-serif;
+  font-size: 4rem; /* 64px */
+  font-weight: 500;
+  line-height: 6rem; /* 96px */
+  height: 6rem;
+  position: absolute;
+  left: 5vw; /* Instead of fixed 78px */
+  top: 1.25rem; /* 18px */
+  white-space: nowrap;
 }
