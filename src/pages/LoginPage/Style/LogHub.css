@@ -1,0 +1,14 @@
+.loghub {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.loghub .div-4 {
+    background-color: white;
+    height: 1315px;
+    position: relative;
+    width: 1440px;
+}

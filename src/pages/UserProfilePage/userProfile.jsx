@@ -2,7 +2,7 @@ import React from "react";
 import { Navbar } from "./navbar";
 import { NavigationFooter } from "./NavigationFooter-1";
 import { Box } from "./personalInfo";
-import { ProfilePic } from "./profilePic";
+import { ProfilePic } from "./ProfilePic";
 import TicketRelatedInfo  from "./TicketRelatedInfo";
 import  Favourites  from "./Favourites";
 import "./Style/userProfile.css";
