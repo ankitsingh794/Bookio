@@ -12,43 +12,6 @@
   border-radius: 12px;
 }
 
-.otp-section {
-  margin: 25px 0;
-  text-align: center;
-  border: 2px solid #e0e0e0;
-  padding: 8px;
-  border-radius: 8px;
-}
-
-.otp-inputs {
-  display: flex;
-  justify-content: center;
-  margin: 12px 0;
-  gap: 12px;
-}
-
-.otp-box {
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  font-size: 20px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-}
-
-.otp-btn,
-.otp-btn-resend-btn {
-  margin-top: 8px;
-  background-color: #333;
-  color: #fff;
-}
-
-.otp-btn-1 {
-  margin-top: 8px;
-  background-color: #333;
-  color: #fff;
-}
-
 .login-btn {
   background-color: #222;
   color: white;

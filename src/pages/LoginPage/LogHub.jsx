@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar1 } from "./navbar-1";
-import Register from "./Register";
-// import Login from "./Login";
+// import Register from "./Register";
+import Login from "./Login";
 import { NavigationFooter } from "./NavigationFooter-2";
 import "./Style/LogHub.css";
 
@@ -10,8 +10,8 @@ export const LogHub = () => {
         <div className="loghub" >
             <div className="div-4">
                 <Navbar1/>
-                <Register/>
-                {/* <Login/> */}
+                {/* <Register/> */}
+                <Login/>
                 <NavigationFooter/>
             </div>
         </div>
