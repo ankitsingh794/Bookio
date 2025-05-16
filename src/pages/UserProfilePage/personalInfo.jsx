@@ -1,5 +1,6 @@
 import React from "react";
 import {Step1} from "./Step1";
+import { TextField } from "@mui/material";
 import "./Style/personalInfo.css";
 import DOBPicker from './DOBPicker'; 
 
@@ -17,41 +18,18 @@ export const Box = () => {
                         </div>
 
                     <div className="form">
-                        <div className="input">
-                            <div className="text-wrapper-2">Username/Display Name</div>
-
-                            <div className="field">
-                                <div className="label">abcd1234</div>
-                            </div>
-                        </div>
+                        <TextField label="UserName/Display Name" fullWidth margin="normal" />
 
                         <div className="input-2">
-                            <div className="text-wrapper-2">First name</div>
-
-                            <div className="field">
-                                <div className="label">Jane</div>
-                            </div>
+                            <TextField label="First Name" fullWidth margin="normal" />
                         </div>
 
                         <div className="input-3">
-                            <div className="text-wrapper-2">Last name</div>
-
-                            <div className="field">
-                                <div className="label">Smitherton</div>
-                            </div>
+                            <TextField label="Last Name" fullWidth margin="normal" />
                         </div>
 
                         <div className="input">
-                            <label className="text-wrapper-2" htmlFor="input-1">
-                                Email address
-                            </label>
-
-                            <input
-                                className="label-wrapper"
-                                id = "input-1"
-                                placeholder="email@janesfakedomain.net"
-                                type="email"
-                            />
+                            <TextField label="Email address" fullWidth margin="normal" />
                         </div>
 
                         <div className="docked-input-date">
@@ -59,27 +37,23 @@ export const Box = () => {
                         </div>
 
                         <div className="input">
-                            <div className="text-wrapper-2">Phone</div>
-
-                            <div className="div-wrapper">
-                                <div className="label-2">+91 XXXXX XXXXX</div>
-                            </div>
+                            <TextField label="Phone no" fullWidth margin="normal" />
                         </div>
 
                         <div className="input-4">
-                            <div className="text-wrapper-2">Billing Address</div>
+                            <TextField label="Address Line 1" fullWidth margin="normal" />
+                        </div>
 
-                            <div className="div-wrapper">
-                                <div className="label-2">42B Lakeview Apartments</div>
-                            </div>
+                        <div className="input-4">
+                            <TextField label="Address Line 2" fullWidth margin="normal" />
                         </div>
 
                         <div className="input-5">
-                            <div className="text-wrapper-2">Landmark / Locality</div>
+                            <TextField label="Landmark" fullWidth margin="normal" />
+                        </div>
 
-                            <div className="div-wrapper">
-                                <div className="label-2">Salt Lake Sector V</div>
-                            </div>
+                        <div className="input-5">
+                            <TextField label="PinCode" fullWidth margin="normal" />
                         </div>
 
                         <button className="button" style={{marginLeft:"2rem"}}>

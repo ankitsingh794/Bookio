@@ -1,0 +1,11 @@
+.sidebar-paper {
+  width: 250px;
+  background-color: #111827;
+  color: #fff;
+}
+.sidebar .MuiListItem-root:hover {
+  background-color: #1f2937;
+}
+.sidebar .MuiListItem-root.Mui-selected {
+  background-color: #374151;
+}

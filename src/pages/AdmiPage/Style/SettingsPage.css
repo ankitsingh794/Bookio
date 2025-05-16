@@ -1,0 +1,14 @@
+.settings-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.settings-title {
+    margin-bottom: 20px;
+}
+
+.settings-section {
+    padding: 20px;
+    margin-bottom: 20px;
+}

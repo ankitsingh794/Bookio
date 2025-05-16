@@ -1,0 +1,30 @@
+
+.user-management-container {
+  padding: 16px;
+}
+
+.user-management-title {
+  margin-bottom: 16px;
+}
+
+.user-toolbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.user-filters {
+  display: flex;
+  gap: 16px;
+}
+
+.bulk-action-bar {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-table-cell-actions > button {
+  margin-right: 8px;
+}

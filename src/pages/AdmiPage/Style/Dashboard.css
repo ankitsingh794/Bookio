@@ -1,0 +1,54 @@
+.orders-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.table-container {
+  background: #1f2937;
+  color: #fff;
+}
+
+.status {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+}
+.status.refunded {
+  background-color: #e0e0e0;
+}
+.status.paid {
+  background-color: #10b981;
+  color: white;
+}
+.status.cancelled {
+  background-color: #ef4444;
+  color: white;
+}
+
+.customer-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.avatar {
+  background-color: #374151;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.email {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}

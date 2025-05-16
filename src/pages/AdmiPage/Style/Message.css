@@ -1,0 +1,42 @@
+
+.MuiTableCell-root {
+  padding: 12px;
+}
+
+.MuiTableCell-root:first-child {
+  font-weight: bold;
+}
+
+.MuiDialogContent-root p {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+.messages-container {
+  padding: 1.5rem;
+}
+
+.messages-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.dialog-content-scroll {
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+.MuiTableRow-root:hover {
+  background-color: rgba(0, 123, 255, 0.05);
+  transition: background-color 0.2s ease;
+}
+
+.MuiDialogActions-root {
+  justify-content: flex-end;
+}
+
+.MuiButton-root + .MuiButton-root {
+  margin-left: 0.5rem;
+}
