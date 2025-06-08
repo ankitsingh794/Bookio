@@ -1,0 +1,88 @@
+.task-container {
+  padding: 2rem;
+  background-color: #0b0f1a; /* space black */
+  color: #e0e7ff; /* light indigo */
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.task-header h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 0 0 8px #3b82f6;
+}
+
+.task-table {
+  background-color: #1f2937; /* dark slate */
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
+}
+
+.MuiTableHead-root {
+  background-color: #ffffff; /* darker */
+}
+
+.MuiTableCell-head {
+  color: #cbd5e1;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #374151;
+}
+
+.MuiTableCell-body {
+  color: #f1f5f9;
+  font-size: 0.88rem;
+  border-bottom: 1px solid #2c2f36;
+}
+
+.MuiTableRow-root:hover {
+  background-color: rgba(255, 255, 255, 0.04);
+  transition: background-color 0.3s ease;
+}
+
+.task-img-preview {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+}
+
+.task-img-preview-large {
+  width: 100%;
+  max-height: 200px;
+  margin-top: 1rem;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
+
+/* Dialog override */
+.MuiDialog-paper {
+  background-color: #ffffff !important;
+  color: #e2e8f0;
+  border-radius: 16px;
+  border: 1px solid #334155;
+}
+
+.MuiButton-contained {
+  background: linear-gradient(135deg, #3b82f6, #9333ea);
+  color: white;
+  font-weight: 500;
+}
+
+.MuiButton-outlined {
+  border-color: #3b82f6;
+  color: #3b82f6;
+}

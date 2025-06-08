@@ -126,7 +126,7 @@ const EventList = () => {
             />
           </div>
           <div className="event-content">
-            <h3 style={{ color: 'black' }}>{event.title}</h3>
+            <h3 style={{ color: '#00FFFF' }}>{event.title}</h3>
             <p>{event.description}</p>
             <p><strong>Date:</strong> {event.date}</p>
             <p><strong>Location:</strong> {event.location}</p>

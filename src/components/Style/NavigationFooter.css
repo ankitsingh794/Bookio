@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
+
+.footer {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  min-height: 14vh;
+  /* 144px */
+  left: 0%;
+  /* -41px */
+  width: 100vw;
+  /* 1550px relative to 1440px base width */
+  display: flex;
+  flex-direction: column;
+  margin-top: 30vh;
+  height: auto;
+}
+
+.footer .navigation-footer {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.39rem 1.39rem;
+  /* 40px 20px */
+  width: 100vw;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.69rem;
+  /* 10px */
+  flex-direction: row;
+  height: auto;
+}
+
+.navigation-footer .items,
+.navigation-footer .items-2,
+.navigation-footer .items-3,
+.navigation-footer .text-wrapper-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.69rem;
+  /* 10px */
+  /* 80px */
+}
+
+.navigation-footer .items-4 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.navigation-footer .icon-collect {
+  display: flex;
+  flex-direction: row;
+  gap: 0.85rem;
+}
+
+.navigation-footer .text-wrapper,
+.navigation-footer .div {
+  color: #99FFFF;
+  font-family: var(--small-text-font-family, Arial);
+  font-size: var(--small-text-font-size, 0.875rem);
+  /* 14px */
+  font-weight: var(--small-text-font-weight, 500);
+  letter-spacing: var(--small-text-letter-spacing, 0.03125rem);
+  /* 0.5px */
+  line-height: var(--small-text-line-height, 1.5);
+}
+
+.navigation-footer .div{
+  color: #FFF0F5;
+}
+
+.navigation-footer .social-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+
+.navigation-footer .text-wrapper-2 {
+  font-family: "Bad Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #00ffe0;
+  font-size: 3rem;
+  font-style: var(--body-text-font-style);
+  font-weight: var(--body-text-font-weight);
+  letter-spacing: var(--body-text-letter-spacing);
+  line-height: var(--body-text-line-height);
+}
+
+.ig {
+  color: #E1306C;
+  height: 2rem;
+  width: 2rem;
+}
+
+.lk {
+  color: #0A66C2;
+  height: 2rem;
+  width: 2rem;
+}
+
+.fb {
+  color: #1877F2;
+  height: 2rem;
+  width: 2rem;
+}
+
+
+.yt {
+  color: #FF0000;
+  height: 2rem;
+  width: 2rem;
+}
+
+.navigation-footer .text-wrapper-3 {
+  color: #B9D9EB;
+  font-family: var(--subheading-font-family);
+  font-size: var(--subheading-font-size);
+  font-style: var(--small-text-font-style);
+  font-weight: var(--subheading-font-weight);
+  letter-spacing: var(--subheading-letter-spacing);
+  line-height: var(--subheading-line-height);
+}
+
+.navigation-footer .item-collect{
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+  margin-right: 3rem;
+  margin-top: 2rem;
+}

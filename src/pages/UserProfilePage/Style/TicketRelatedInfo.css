@@ -5,6 +5,17 @@
   height: auto;
 }
 
+.ticket-card .MuiTypography-root {
+  color: #36454F !important;
+}
+
+.ticket-card .css-1umw9bq-MuiSvgIcon-root {
+  fill: #111111 !important;
+}
+
+.ticket-card .section-title{
+  text-shadow: 0 0 2px #414A4C;
+}
 .ticket-title {
   margin-bottom: 0.5rem ;
   font-weight: 600;

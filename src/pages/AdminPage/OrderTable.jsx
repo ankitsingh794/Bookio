@@ -48,20 +48,42 @@ const OrdersTable = ({ orders }) => {
     };
 
     return (
-        <>
+        <div className='order-wrap'>
             <div className="orders-header">
                 <h2>Orders</h2>
-                <Button variant="contained">Download PDF</Button>
+                <Button
+                    variant="contained"
+                    sx={{
+                        backgroundColor: '#10b981',
+                        '&:hover': {
+                            backgroundColor: '#059669',
+                        },
+                        textTransform: 'none',
+                        fontWeight: 'bold',
+                    }}
+                >
+                    Download PDF
+                </Button>
+
             </div>
             <div className="filters">
                 <TextField
                     variant="outlined"
                     size="small"
                     placeholder="Search"
-                    style={{ width: '48vw' }}
+                    style={{ width: '46.4vw' }}
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
+                    sx={{
+                        input: { color: 'white' },
+                        '& .MuiOutlinedInput-root': {
+                            '& fieldset': { borderColor: '#374151' },
+                            '&:hover fieldset': { borderColor: '#10b981' },
+                            '&.Mui-focused fieldset': { borderColor: '#10b981' },
+                        },
+                    }}
                 />
+
                 <Select
                     variant="outlined"
                     size="small"
@@ -69,7 +91,21 @@ const OrdersTable = ({ orders }) => {
                     displayEmpty
                     value={statusFilter}
                     onChange={handleFilterChange(setStatusFilter)}
+                    sx={{
+                        color: 'white',
+                        '& .MuiOutlinedInput-notchedOutline': {
+                            borderColor: '#374151',
+                        },
+                        '&:hover .MuiOutlinedInput-notchedOutline': {
+                            borderColor: '#10b981',
+                        },
+                        '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
+                            borderColor: '#10b981',
+                        },
+                        svg: { color: 'white' }
+                    }}
                 >
+
                     <MenuItem value="">Filter by status</MenuItem>
                     <MenuItem value="Paid">Paid</MenuItem>
                     <MenuItem value="Refunded">Refunded</MenuItem>
@@ -80,9 +116,23 @@ const OrdersTable = ({ orders }) => {
                     size="small"
                     style={{ width: '10vw' }}
                     displayEmpty
-                    value={categoryFilter}
-                    onChange={handleFilterChange(setCategoryFilter)}
+                    value={statusFilter}
+                    onChange={handleFilterChange(setStatusFilter)}
+                    sx={{
+                        color: 'white',
+                        '& .MuiOutlinedInput-notchedOutline': {
+                            borderColor: '#374151',
+                        },
+                        '&:hover .MuiOutlinedInput-notchedOutline': {
+                            borderColor: '#10b981',
+                        },
+                        '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
+                            borderColor: '#10b981',
+                        },
+                        svg: { color: 'white' }
+                    }}
                 >
+
                     <MenuItem value="">All Categories</MenuItem>
                     <MenuItem value="Concert">Concert</MenuItem>
                     <MenuItem value="Workshop">Workshop</MenuItem>
@@ -92,9 +142,23 @@ const OrdersTable = ({ orders }) => {
                     size="small"
                     style={{ width: '10vw' }}
                     displayEmpty
-                    value={dateFilter}
-                    onChange={handleFilterChange(setDateFilter)}
+                    value={statusFilter}
+                    onChange={handleFilterChange(setStatusFilter)}
+                    sx={{
+                        color: 'white',
+                        '& .MuiOutlinedInput-notchedOutline': {
+                            borderColor: '#374151',
+                        },
+                        '&:hover .MuiOutlinedInput-notchedOutline': {
+                            borderColor: '#10b981',
+                        },
+                        '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
+                            borderColor: '#10b981',
+                        },
+                        svg: { color: 'white' }
+                    }}
                 >
+
                     <MenuItem value="">All Months</MenuItem>
                     {[...new Set(orders.map(o => getMonthYear(o.date)))].map((monthYear, idx) => (
                         <MenuItem key={idx} value={monthYear}>{monthYear}</MenuItem>
@@ -145,9 +209,20 @@ const OrdersTable = ({ orders }) => {
                     onChange={(e, value) => setPage(value)}
                     variant="outlined"
                     shape="rounded"
+                    sx={{
+                        '& .MuiPaginationItem-root': {
+                            color: '#fff',
+                            borderColor: '#374151',
+                        },
+                        '& .Mui-selected': {
+                            backgroundColor: '#10b981',
+                            color: '#fff',
+                        },
+                    }}
                 />
+
             </Box>
-        </>
+        </div>
     );
 };
 

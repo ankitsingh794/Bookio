@@ -1,0 +1,113 @@
+.order-wrap {
+  padding: 2rem;
+  background-color: #0a0a23;
+  min-height: 100vh;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.orders-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  color: #7DF9FF;
+}
+
+.orders-header h2 {
+  color: #ffffff;
+  text-shadow: 0 0 8px #3b82f6;
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.table-container {
+  background-color: #111827;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(125, 249, 255, 0.07);
+  border: 1px solid rgba(125, 249, 255, 0.1);
+}
+
+.MuiTableCell-root {
+  color: #ffffff;
+  border-bottom: 1px solid #374151;
+}
+
+.MuiTableHead-root {
+  background-color: #1f2937;
+}
+
+.MuiTableRow-root:hover {
+  background-color: rgba(125, 249, 255, 0.03);
+}
+
+.status {
+  padding: 0.3rem 0.7rem;
+  border-radius: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 0.75rem;
+}
+
+.status.paid {
+  background-color: #10b98120;
+  color: #10b981;
+  border: 1px solid #10b981;
+}
+
+.status.refunded {
+  background-color: #f59e0b20;
+  color: #f59e0b;
+  border: 1px solid #f59e0b;
+}
+
+.status.cancelled {
+  background-color: #ef444420;
+  color: #ef4444;
+  border: 1px solid #ef4444;
+}
+
+.customer-info {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  background-color: #374151;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #7DF9FF;
+  font-size: 0.9rem;
+  box-shadow: 0 0 5px rgba(125, 249, 255, 0.3);
+}
+
+.email {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+a {
+  color: #7DF9FF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.MuiPagination-root {
+  color: white;
+}

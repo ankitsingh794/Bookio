@@ -4,6 +4,7 @@ import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import dayjs from 'dayjs';
+import './Style/DOBPicker.css';
 
 export default function DOBPicker() {
   const [value, setValue] = React.useState(dayjs('2000-01-01'));

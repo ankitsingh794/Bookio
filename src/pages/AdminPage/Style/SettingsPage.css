@@ -2,6 +2,7 @@
     padding: 20px;
     max-width: 800px;
     margin: auto;
+    background-color: transparent;
 }
 
 .settings-title {
@@ -11,4 +12,5 @@
 .settings-section {
     padding: 20px;
     margin-bottom: 20px;
+    background-color: transparent !important;
 }

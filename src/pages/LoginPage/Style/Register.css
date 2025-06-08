@@ -62,3 +62,127 @@
   color: #333;
   text-decoration: none;
 }
+
+.css-1gtchvp-MuiPaper-root {
+  background-color: transparent !important;
+  color: white !important;
+}
+
+.css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root {
+  color: white !important;
+  border: white !important;
+}
+
+
+
+
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.register-box {
+  width: 90vw;
+  max-width: 28rem;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 30px rgba(147, 51, 234, 0.15);
+  color: #e0e7ff;
+  animation: pulseBox 6s infinite ease-in-out;
+}
+
+@keyframes pulseBox {
+  0%, 100% {
+    box-shadow: 0 0 20px #6366f1;
+  }
+  50% {
+    box-shadow: 0 0 40px #9333ea;
+  }
+}
+
+.otp-section {
+  margin: 1.5625rem 0;
+  text-align: center;
+  border: 2px solid #334155;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: rgba(15, 23, 42, 0.6);
+  color: #f1f5f9;
+}
+
+.otp-inputs {
+  display: flex;
+  justify-content: center;
+  margin: 0.75rem 0;
+  gap: 0.75rem;
+}
+
+.otp-box {
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+  font-size: 1.25rem;
+  border: 1px solid #64748b;
+  border-radius: 0.375rem;
+  background-color: #1e293b;
+  color: #e0f2fe;
+  transition: box-shadow 0.3s;
+}
+
+.otp-box:focus {
+  outline: none;
+  box-shadow: 0 0 10px #38bdf8;
+  border-color: #38bdf8;
+}
+
+.otp-btn,
+.otp-btn-resend-btn,
+.otp-btn-1,
+.register-btn {
+  margin-top: 0.5rem;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.otp-btn:hover,
+.otp-btn-resend-btn:hover,
+.otp-btn-1:hover,
+.register-btn:hover {
+  background: linear-gradient(135deg, #7c3aed, #4f46e5);
+  transform: translateY(-1px);
+}
+
+.register-btn {
+  margin-top: 1rem;
+}
+
+.links {
+  text-align: center;
+  margin-top: 0.75rem !important;
+}
+
+.links a {
+  color: #60a5fa;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #93c5fd;
+  text-shadow: 0 0 8px #60a5fa;
+}

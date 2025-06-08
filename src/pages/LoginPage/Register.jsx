@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 import { TextField, Button, Box, Typography, Grid, Paper } from "@mui/material";
 import './Style/Register.css';
 
@@ -32,25 +33,27 @@ const Register = () => {
         setOtp(newOtp);
       }
     }
+    
   };
 
 
-  return (
-    <Box className="register-container">
-      <Paper elevation={3} className="register-box">
-        <Typography variant="h4" gutterBottom>Register</Typography>
 
-        <TextField label="Email" fullWidth margin="normal" />
-        <TextField label="Phone No" fullWidth margin="normal" />
-        <TextField label="Password" type="password" fullWidth margin="normal" />
-        <TextField label="Conirm Password" type="password" fullWidth margin="normal" />
+  return (
+    <Box className="register-container" style={{color:'#FFFFFF'}}>
+      <Paper elevation={3} className="register-box" style={{color:'#FFFFFF'}}>
+        <Typography variant="h4" style={{color:'#FFFFFF'}} gutterBottom>Register</Typography>
+
+        <TextField label="Email" fullWidth margin="normal" style={{color:'#FFFFFF'}}/>
+        <TextField label="Phone No" fullWidth margin="normal" style={{color:'#FFFFFF'}}/>
+        <TextField label="Password" type="password" fullWidth margin="normal" style={{color:'#FFFFFF'}}/>
+        <TextField label="Conirm Password" type="password" fullWidth margin="normal" style={{color:'#FFFFFF'}}/>
 
         <Box className="otp-section">
-          <Typography variant="subtitle1">OTP</Typography>
+          <Typography variant="subtitle1" style={{color:'#FFFFFF'}} >OTP</Typography>
 
           {showOtp && (
             <>
-              <Box className="otp-inputs">
+              <Box className="otp-inputs" style={{color:'#FFFFFF'}} >
                 {otp.map((data, index) => (
                   <input
                     key={index}
@@ -68,7 +71,8 @@ const Register = () => {
                 variant="contained"
                 size="small"
                 className="otp-btn"
-                style={{ marginRight: "39px" }}
+                style={{ marginRight: "39px" ,color:'#FFFFFF'}}
+                
               >
                 Verify
               </Button>
@@ -85,7 +89,7 @@ const Register = () => {
                 // triggerOtpSend(); <-- call your API here
               }}
               className="otp-btn"
-              style={{ marginTop: "10px" }}
+              style={{ marginTop: "10px", color:'#FFFFFF' }}
             >
               Get OTP
             </Button>
@@ -97,21 +101,22 @@ const Register = () => {
                 // triggerOtpSend(); <-- call your API again
               }}
               className="otp-btn-resend-btn"
+              style={{color:'#FFFFFF'}}
             >
               Resend OTP
             </Button>
           )}
         </Box>
 
-        <Button fullWidth variant="contained" className="register-btn">
+        <Button fullWidth variant="contained" className="register-btn" style={{color:'#FFFFFF'}}>
           Register
         </Button>
 
-        <Typography variant="body2" className="links">
-          <a href="#">Forgot password?</a>
+        <Typography variant="body2" className="links" style={{color:'#FFFFFF'}}>
+          <Link to="/loghub/forgot-password" style={{color:'#FFFFFF', cursor: 'pointer'}} >Forgot password?</Link>
         </Typography>
-        <Typography variant="body2" className="links">
-          Already have an account? <a href="#">Login!</a>
+        <Typography variant="body2" className="links" style={{color:'#FFFFFF'}}>
+          Already have an account? <a href="#" style={{color:'#FFFFFF'}}>Login!</a>
         </Typography>
       </Paper>
     </Box>

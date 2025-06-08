@@ -1,25 +1,32 @@
 .section {
-  background-color: #f7f7f7;
-  height: 16.44rem; /* 236px / 14.36 (default root font-size) */
-  position: relative;
-  width: 100vw; /* Full viewport width */
-  top: 131.9rem; /* 2470px */
-  margin: 0 auto; /* Center horizontally if smaller screen */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /* 32px spacing between cards */
+  width: 100vw;
+  padding: 2rem;
+  padding-left: 7rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
 }
 
 .section .buttons {
-  align-items: center;
-  display: inline-flex;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
   gap: 1.67rem; /* 24px */
-  justify-content: flex-end;
-  left: 60vw; /* ~864px assuming 1440px width */
-  position: absolute;
-  top: 5.56rem; /* 80px */
+ /* 80px */
   max-width: 100%;
   box-sizing: border-box;
 }
 
-.section .button {
+.section .button,
+.section .button-1 {
   all: unset;
   align-items: center;
   background-color: #000000;
@@ -30,7 +37,6 @@
   flex: 0 0 auto;
   gap: 0.56rem; /* 8px */
   padding: 1.39rem 2.22rem; /* 20px 32px */
-  position: relative;
   cursor: pointer;
 }
 
@@ -42,23 +48,12 @@
   letter-spacing: 0;
   line-height: 2.57rem; /* 36px */
   margin-top: -0.07rem; /* -1px */
-  position: relative;
   white-space: nowrap;
   width: fit-content;
 }
 
-.section .div-wrapper {
-  all: unset;
-  align-items: center;
+.section .button-1 {
   background-color: #e6e6e6;
-  border-radius: 0.56rem; /* 8px */
-  box-shadow: var(--button-shadow);
-  box-sizing: border-box;
-  display: inline-flex;
-  flex: 0 0 auto;
-  gap: 0.56rem; /* 8px */
-  padding: 1.39rem 2.22rem; /* 20px 32px */
-  position: relative;
 }
 
 .section .div {
@@ -69,22 +64,18 @@
   letter-spacing: 0;
   line-height: 2.57rem; /* 36px */
   margin-top: -0.07rem; /* -1px */
-  position: relative;
   white-space: nowrap;
   width: fit-content;
 }
 
 .section .text-wrapper-2 {
-  color: #000000;
-  font-family: "Inter-SemiBold", Helvetica, sans-serif;
-  font-size: 3.33rem; /* 48px */
-  font-weight: 600;
-  left: 5.56rem; /* 80px */
-  letter-spacing: -0.067rem; /* -0.96px */
-  line-height: normal;
-  position: absolute;
-  top: 6.13rem; /* 88px */
-  width: 43.4rem; /* 625px */
-  max-width: 100%;
-  white-space: normal;
+  font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    color: #E3F2FD;
+    font-size: 3rem;
+    margin-right: 25vw;
 }

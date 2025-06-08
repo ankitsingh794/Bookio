@@ -1,13 +1,15 @@
 .event {
-    background-color: #ffffff;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* or center, space-between, etc. as you want */
     width: 100%;
+    min-height: 100vh;
+    /* at least full viewport height */
+    height: auto;
 }
 
 .event .div-5 {
-    background-color: white;
     height: 100%;
     position: relative;
     width: 100%;

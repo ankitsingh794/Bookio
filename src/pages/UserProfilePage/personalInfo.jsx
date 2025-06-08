@@ -1,8 +1,8 @@
 import React from "react";
-import {Step1} from "./Step1";
+import { Step1 } from "./Step1";
 import { TextField } from "@mui/material";
 import "./Style/personalInfo.css";
-import DOBPicker from './DOBPicker'; 
+import DOBPicker from './DOBPicker';
 
 
 export const Box = () => {
@@ -11,11 +11,11 @@ export const Box = () => {
             <div className="personal-info">
                 <div className="overlap">
                     <div className="heading">
-                            <div className="overlap-group">
-                                <Step1 className = "circular" />
-                                <div className="text-wrapper-4">Personal Information</div>
-                            </div>
+                        <div className="overlap-group">
+                            <Step1 className="circular" />
+                            <div className="text-wrapper-4">Personal Information</div>
                         </div>
+                    </div>
 
                     <div className="form">
                         <TextField label="UserName/Display Name" fullWidth margin="normal" />
@@ -56,13 +56,16 @@ export const Box = () => {
                             <TextField label="PinCode" fullWidth margin="normal" />
                         </div>
 
-                        <button className="button" style={{marginLeft:"2rem"}}>
-                            <div className="text-wrapper-3">Clear</div>
-                        </button>
+                        <div className="bgroup">
 
-                        <button className="button">
-                            <div className="text-wrapper-3">Submit</div>
-                        </button>
+                            <button className="button">
+                                <div className="text-wrapper-3">Clear</div>
+                            </button>
+
+                            <button className="button">
+                                <div className="text-wrapper-3">Submit</div>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

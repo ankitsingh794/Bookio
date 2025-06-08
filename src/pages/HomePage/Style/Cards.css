@@ -1,75 +1,42 @@
 .cards {
-  align-items: center;
   display: flex;
-  gap: 2.15rem; /* 31px */
-  position: relative;
-  width: 88.89vw; /* 1280px assuming 1440px base width */
-  top: 115.89vw; /* 2000px relative to base width */
-  left: 5.21vw; /* 75px */
-}
-
-.cards .card {
-  align-items: flex-start;
-  display: flex;
-  flex: 1;
   flex-direction: column;
-  flex-grow: 1;
-  gap: 2.22rem; /* 32px */
-  position: relative;
+  gap: 2rem;
+  /* 32px spacing between cards */
+  width: 90vw;
+  padding: 2rem;
+  box-sizing: border-box;
+  margin-top: 4rem !important;
+  margin: 4rem;
 }
 
-.cards .image,
-.cards .image-2 {
-  align-self: stretch;
-  background-position: 50% 50%;
-  background-size: cover;
-  border-radius: 0.5rem;
-  height: 21.31rem; /* 341px */
-  position: relative;
+
+
+.cards .text-wrapper-23 {
+  font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    color: #E3F2FD;
+    font-size: 3rem;
+}
+
+.cards .swiper {
   width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-.cards .image {
-    background-image: url('https://picsum.photos/seed/c3/800/400');
+.cards .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 50vw;
+  height: 50vh;
 }
 
-.card .image-2 {
-    background-image: url('https://picsum.photos/seed/d4/800/400');
-}
-
-.cards .copy {
-  align-items: flex-start;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: var(--variable-collection-spacing-XS);
-  position: relative;
-  width: 38.1vw; /* ~547-548px */
-}
-
-.cards .text-wrapper,
-.cards .text-wrapper-2 {
-  color: black;
-  font-family: "Inter-Medium", Arial, Helvetica, sans-serif;
-  font-size: 1.5rem; /* 24px */
-  font-weight: 500;
-  letter-spacing: 0;
-  line-height: 2.25rem; /* 36px */
-  margin-top: -0.0625rem;
-  margin-right: -0.03rem;
-  position: relative;
-  width: 38.1vw; /* ~548px */
-}
-
-.cards .div,
-.cards .p {
-  color: #828282;
-  font-family: "Inter-Regular", Arial, Helvetica, sans-serif;
-  font-size: 1.5rem; /* 24px */
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 2.25rem; /* 36px */
-  margin-right: -0.03rem;
-  position: relative;
-  width: 38.1vw; /* ~548px */
+.cards .swiper-slide img {
+  display: block;
+  width: 100%;
 }

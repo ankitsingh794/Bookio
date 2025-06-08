@@ -1,5 +1,4 @@
 .profile-page {
-    background-color: #ffffff;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -11,7 +10,6 @@
 }
 
 .profile-page .div-3 {
-    background-color: #ffffff;
     min-height: 100vh;
     height: auto;
     position: relative;

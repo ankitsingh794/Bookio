@@ -4,12 +4,29 @@ import './Style/Login.css';
 
 const Login = () => {
     return (
-        <Box className="login-container">
-            <Paper elevation={3} className="login-box">
-                <Typography variant="h4" gutterBottom>Login</Typography>
+        <Box className="login-container space-bg">
+            <Paper elevation={6} className="login-box glass-effect">
+                <Typography variant="h4" className="login-title">
+                    Login
+                </Typography>
 
-                <TextField label="Email or Phone no" fullWidth margin="normal" />
-                <TextField label="Password" type="password" fullWidth margin="normal" />
+                <TextField
+                    label="Email or Phone"
+                    variant="outlined"
+                    fullWidth
+                    margin="normal"
+                    InputLabelProps={{ style: { color: '#ccc' } }}
+                    InputProps={{ style: { color: '#fff' } }}
+                />
+                <TextField
+                    label="Password"
+                    type="password"
+                    variant="outlined"
+                    fullWidth
+                    margin="normal"
+                    InputLabelProps={{ style: { color: '#ccc' } }}
+                    InputProps={{ style: { color: '#fff' } }}
+                />
 
                 <Button fullWidth variant="contained" className="login-btn">
                     Login
@@ -19,7 +36,7 @@ const Login = () => {
                     <a href="#">Forgot password?</a>
                 </Typography>
                 <Typography variant="body2" className="links">
-                    New to our platform? <a href="#">Register!</a>
+                    New to our app? <a href="#">Register</a>
                 </Typography>
             </Paper>
         </Box>

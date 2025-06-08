@@ -12,21 +12,16 @@ const ForgPass = () => {
         const newOtp = [...otp];
         newOtp[index] = element.value;
         setOtp(newOtp);
+        if (element.nextSibling) element.nextSibling.focus();
+    };
 
-        if (element.nextSibling) {
-            element.nextSibling.focus();
-        }
-    }
     const handleKeyDown = (e, index) => {
         if (e.key === "Backspace") {
             const newOtp = [...otp];
-            if (otp[index] === "") {
-                if (index > 0) {
-                    const prevInput = e.target.previousSibling;
-                    newOtp[index - 1] = "";
-                    setOtp(newOtp);
-                    prevInput.focus();
-                }
+            if (otp[index] === "" && index > 0) {
+                newOtp[index - 1] = "";
+                setOtp(newOtp);
+                e.target.previousSibling?.focus();
             } else {
                 newOtp[index] = "";
                 setOtp(newOtp);
@@ -35,18 +30,29 @@ const ForgPass = () => {
     };
 
     return (
-        <Box className="forgot-container">
-            <Paper elevation={3} className="forgot-box">
-                <Typography variant="h4" gutterBottom>Fogot Password ?</Typography>
+        <Box className="forgot-container space-bg">
+            <Paper elevation={6} className="forgot-box glass-effect">
+                <Typography variant="h4" gutterBottom className="forgot-title">
+                    Forgot Password?
+                </Typography>
 
-                <TextField label="Email or Phone no" fullWidth margin="normal" />
+                <TextField
+                    label="Email or Phone Number"
+                    fullWidth
+                    margin="normal"
+                    variant="outlined"
+                    InputLabelProps={{ style: { color: '#ccc' } }}
+                    InputProps={{ style: { color: '#fff' } }}
+                />
 
                 <Button fullWidth variant="contained" className="forgot-btn">
-                    Sent OTP
+                    Send OTP
                 </Button>
 
                 <Box className="otp-section">
-                    <Typography variant="subtitle1">OTP</Typography>
+                    <Typography variant="subtitle1" gutterBottom className="otp-label">
+                        Enter OTP
+                    </Typography>
 
                     {showOtp && (
                         <>
@@ -68,7 +74,7 @@ const ForgPass = () => {
                                 variant="contained"
                                 size="small"
                                 className="otp-btn"
-                                style={{ marginRight: "39px" }}
+                                sx={{ mt: 1 }}
                             >
                                 Verify
                             </Button>
@@ -82,10 +88,9 @@ const ForgPass = () => {
                             onClick={() => {
                                 setShowOtp(true);
                                 setOtpSent(true);
-                                // triggerOtpSend(); <-- call your API here
                             }}
                             className="otp-btn"
-                            style={{ marginTop: "10px" }}
+                            sx={{ mt: 1 }}
                         >
                             Get OTP
                         </Button>
@@ -94,15 +99,15 @@ const ForgPass = () => {
                             variant="outlined"
                             size="small"
                             onClick={() => {
-                                // triggerOtpSend(); <-- call your API again
+                                // resend logic
                             }}
                             className="otp-btn-resend-btn"
+                            sx={{ mt: 1, color: 'white', borderColor: '#6366f1' }}
                         >
                             Resend OTP
                         </Button>
                     )}
                 </Box>
-
             </Paper>
         </Box>
     );

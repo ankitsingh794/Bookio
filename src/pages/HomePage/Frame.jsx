@@ -1,44 +1,40 @@
 import React from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/effect-cards';
+
+import { EffectCards } from 'swiper/modules';
 import "./Style/Frame.css"
 
 export const Frame = () => {
-    return(
+    return (
         <div className="frame">
-            <div className="card">
-                <div className="image" />
+            
 
-                <div className="copy">
-                    <div className="text-wrapper">Subheading</div>
+            <div className="text-wrapper-22">Discover Events Near You</div>
+            <div className="card-collect">
+                <Swiper
+                    effect={'cards'}
+                    grabCursor={true}
+                    modules={[EffectCards]}
+                    className="mySwiper"
+                    style={{maxWidth:"100vw"}}
+                >
+                    <SwiperSlide>Slide 1</SwiperSlide>
+                    <SwiperSlide>Slide 2</SwiperSlide>
+                    <SwiperSlide>Slide 3</SwiperSlide>
+                    <SwiperSlide>Slide 4</SwiperSlide>
+                    <SwiperSlide>Slide 5</SwiperSlide>
+                    <SwiperSlide>Slide 6</SwiperSlide>
+                    <SwiperSlide>Slide 7</SwiperSlide>
+                    <SwiperSlide>Slide 8</SwiperSlide>
+                    <SwiperSlide>Slide 9</SwiperSlide>
+                </Swiper>
 
-                    <p className="div">
-                        Body text for whatever you'd like to add more to the Subheading.
-                    </p>
-                </div>
+                
             </div>
 
-            <div className="card">
-                <div className="image-2" />
-
-                <div className="copy">
-                    <div className="text-wrapper">Subheading</div>
-
-                    <p className="div">
-                        Body text for whatever you'd like to add more to the Subheading.
-                    </p>
-                </div>
-            </div>
-
-            <div className="card">
-                <div className="image-3" />
-
-                <div className="copy">
-                    <div className="text-wrapper">Subheading</div>
-
-                    <p className="div">
-                        Body text for whatever you'd like to add more to the Subheading.
-                    </p>
-                </div>
-            </div>            
         </div>
     );
 };

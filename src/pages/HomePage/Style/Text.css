@@ -1,12 +1,21 @@
 .text {
-    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    gap: 25vw;
+    /* 32px spacing between cards */
+    width: 90vw;
+    padding: 2rem;
+    box-sizing: border-box;
+    margin-top: 4rem !important;
+    margin: 4rem;
+    align-items: stretch;
+}
+
+.text .cover {
     display: flex;
     flex-direction: column;
-    gap: 3.33rem; /* 48px */
-    position: relative;
-    width: 36rem; /* 516px */
-    top: 92rem; /* 1720px */
-    left: 3.47rem; /* 50px */
+    gap: 2rem;
+    max-width: 50vw;
 }
 
 .text .div {
@@ -15,54 +24,125 @@
     display: flex;
     flex: 0 0 auto;
     flex-direction: column;
-    gap: 0.56rem; /* 8px */
+    gap: 0.56rem;
+    /* 8px */
     justify-content: center;
     position: relative;
     width: 100%;
 }
 
 .text .text-wrapper {
-    color: #000000;
+    color: #F8F8FF;
     font-family: "Inter-Medium", Arial, Helvetica, sans-serif;
-    font-size: 1.67rem; /* 24px */
+    font-size: 1.5rem;
+    /* 24px */
     font-weight: 500;
     letter-spacing: 0;
-    line-height: 2.57rem; /* 36px */
-    margin-top: -0.07rem; /* -1px */
+    line-height: 2.57rem;
+    /* 36px */
+    margin-top: -0.07rem;
+    /* -1px */
     position: relative;
-    width: 35.94rem; /* 515px */
+    width: 35.94rem;
+    /* 515px */
 }
 
 .text .p {
     color: #828282;
     font-family: "Inter-Medium", Arial, Helvetica, sans-serif;
-    font-size: 1.67rem; /* 24px */
+    font-size: 1.2rem;
+    /* 24px */
     font-weight: 400;
     letter-spacing: 0;
-    line-height: 2.57rem; /* 36px */
+    line-height: 2.57rem;
+    /* 36px */
     position: relative;
-    width: 35.94rem; /* 515px */
+    width: 35.94rem;
+    /* 515px */
 }
 
-.text .text-wrapper-2 {
-    align-self: stretch;
-    color: #000000;
-    font-family: "Inter-Medium", Arial, Helvetica, sans-serif;
-    font-size: 1.67rem; /* 24px */
+
+.text .text-wrapper-24 {
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    color: #E3F2FD;
+    font-size: 3rem;
+}
+
+.text .text-wrapper-21,
+.text .text-wrapper-25 {
+    color: white;
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: 0;
-    line-height: 2.57rem; /* 36px */
-    margin-top: -0.07rem; /* -1px */
-    position: relative;
+    line-height: 2.25rem;
+    margin-top: -0.0625rem;
+    white-space: nowrap;
+    width: auto;
 }
 
-.text .text-wrapper-3 {
-    align-self: stretch;
-    color: #828282;
-    font-family: "Inter-Medium", Arial, Helvetica, sans-serif;
-    font-size: 1.67rem; /* 24px */
-    font-weight: 400;
-    letter-spacing: 0;
-    line-height: 2.57rem; /* 36px */
-    position: relative;
+.text .buttons-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
 }
+
+.buttons-2 .button-3 {
+    min-width: 10vw;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    color: #fff;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.buttons-2 .button-4 {
+    min-width: 10vw;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    color: #f2f2f2;
+    /* Slightly brighter than #fff */
+    backdrop-filter: blur(20px);
+    background: rgba(200, 200, 200, 0.1);
+    /* Light gray tint */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.5rem;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+
+}
+/* Shared hover animation for both buttons */
+.buttons-2 .button-3,
+.buttons-2 .button-4 {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.buttons-2 .button-3:hover,
+.buttons-2 .button-4:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* 
+.frame-screen .button-3,
+.frame-screen .button-4 {
+  all: unset;
+  align-items: center;
+  border-radius: 0.5rem;
+  box-shadow: var(--button-shadow);
+  box-sizing: border-box;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+} */

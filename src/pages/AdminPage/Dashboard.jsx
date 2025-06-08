@@ -42,13 +42,13 @@ const mockOrders = [
 ];
 
 
-const Dashboard = () => {
+export const Setting = () => {
   return (
     <Box sx={{ display: 'flex' }}>
       <Sidebar />
-      <Box sx={{ flexGrow: 1, ml: '250px', p: 3 }}>
-        {/* <OrdersTable orders={mockOrders} /> */}
-            {/* <Task/> */}
+      <Box sx={{ flexGrow: 1, ml: '0' }}>
+        {/* <OrdersTable orders={mockOrders} />  */}
+             {/* <Task/> */}
             {/* <Messages/> */}
             {/* <UserListPage/> */}
             {/* <SupportPage/> */}
@@ -58,4 +58,86 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+
+export const Support = () => {
+  return (
+    <Box sx={{ display: 'flex' }}>
+      <Sidebar />
+      <Box sx={{ flexGrow: 1, ml: '0' }}>
+        {/* <OrdersTable orders={mockOrders} />  */}
+             {/* <Task/> */}
+            {/* <Messages/> */}
+            {/* <UserListPage/> */}
+            <SupportPage/>
+            {/* <SettingsPage/> */}
+      </Box>
+    </Box>
+  );
+};
+
+
+export const UserList = () => {
+  return (
+    <Box sx={{ display: 'flex' }}>
+      <Sidebar />
+      <Box sx={{ flexGrow: 1, ml: '0' }}>
+        {/* <OrdersTable orders={mockOrders} />  */}
+             {/* <Task/> */}
+            {/* <Messages/> */}
+            <UserListPage/>
+            {/* <SupportPage/> */}
+            {/* <SettingsPage/> */}
+      </Box>
+    </Box>
+  );
+};
+
+
+export const Feedback = () => {
+  return (
+    <Box sx={{ display: 'flex' }}>
+      <Sidebar />
+      <Box sx={{ flexGrow: 1, ml: '0' }}>
+        {/* <OrdersTable orders={mockOrders} />  */}
+             {/* <Task/> */}
+            <Messages/>
+            {/* <UserListPage/> */}
+            {/* <SupportPage/> */}
+            {/* <SettingsPage/> */}
+      </Box>
+    </Box>
+  );
+};
+
+
+export const Tasks = () => {
+  return (
+    <Box sx={{ display: 'flex' }}>
+      <Sidebar />
+      <Box sx={{ flexGrow: 1, ml: '0' }}>
+        {/* <OrdersTable orders={mockOrders} />  */}
+             <Task/>
+            {/* <Messages/> */}
+            {/* <UserListPage/> */}
+            {/* <SupportPage/> */}
+            {/* <SettingsPage/> */}
+      </Box>
+    </Box>
+  );
+};
+
+export const OrderDetails = () => {
+  return (
+    <Box sx={{ display: 'flex' }}>
+      <Sidebar />
+      <Box sx={{ flexGrow: 1, ml: '0' }}>
+        <OrdersTable orders={mockOrders} /> 
+             {/* <Task/> */}
+            {/* <Messages/> */}
+            {/* <UserListPage/> */}
+            {/* <SupportPage/> */}
+            {/* <SettingsPage/> */}
+      </Box>
+    </Box>
+  );
+};

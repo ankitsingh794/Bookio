@@ -1,32 +1,54 @@
-.login-container {
+.login-container.space-bg {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem 1rem;
   min-height: 100vh;
-  height: auto;
-  box-sizing: border-box;
+  padding: 2rem;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  position: relative;
 }
 
-.login-box {
-  width: 90vw; /* max width relative to viewport */
-  max-width: 28rem; /* ~450px */
-  padding: 1.5rem; /* 24px */
-  border-radius: 0.75rem; /* 12px */
+.login-box.glass-effect {
+  padding: 2rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  max-width: 400px;
+  width: 100%;
+  color: #ffffff;
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-weight: bold;
 }
 
 .login-btn {
-  background-color: #222;
+  background-color: #7f5af0 !important;
   color: white;
-  margin-top: 1rem; /* 16px */
+  margin-top: 3rem !important;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .links {
   text-align: center;
-  margin-top: 0.75rem !important; /* 12px */
+  margin-top: 1rem;
+  color: #bbb;
 }
 
 .links a {
-  color: #333;
+  color: #fff;
   text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
 }

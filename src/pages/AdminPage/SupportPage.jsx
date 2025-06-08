@@ -62,7 +62,9 @@ const SupportPage = () => {
             </Box>
 
             <Box component="form" onSubmit={handleSubmit} className="contact-form">
-                <Typography variant="h5" className="section-title">Contact Support</Typography>
+                <Typography variant="h5" className="section-title">
+                    Contact Support
+                </Typography>
 
                 <TextField
                     label="Name"
@@ -72,6 +74,8 @@ const SupportPage = () => {
                     fullWidth
                     required
                     margin="normal"
+                    InputProps={{ style: { color: '#e0e7ff' } }}
+                    InputLabelProps={{ style: { color: '#94a3b8' } }}
                 />
                 <TextField
                     label="Email"
@@ -82,6 +86,8 @@ const SupportPage = () => {
                     fullWidth
                     required
                     margin="normal"
+                    InputProps={{ style: { color: '#e0e7ff' } }}
+                    InputLabelProps={{ style: { color: '#94a3b8' } }}
                 />
                 <TextField
                     label="Subject"
@@ -91,6 +97,8 @@ const SupportPage = () => {
                     fullWidth
                     required
                     margin="normal"
+                    InputProps={{ style: { color: '#e0e7ff' } }}
+                    InputLabelProps={{ style: { color: '#94a3b8' } }}
                 />
                 <TextField
                     label="Message"
@@ -102,9 +110,25 @@ const SupportPage = () => {
                     margin="normal"
                     multiline
                     rows={4}
+                    InputProps={{ style: { color: '#e0e7ff' } }}
+                    InputLabelProps={{ style: { color: '#94a3b8' } }}
                 />
 
-                <Button type="submit" variant="contained" color="primary" sx={{ mt: 2 }}>
+                <Button
+                    type="submit"
+                    variant="contained"
+                    sx={{
+                        mt: 2,
+                        background: 'linear-gradient(135deg, #3b82f6, #9333ea)',
+                        color: '#fff',
+                        fontWeight: 600,
+                        boxShadow: '0 0 12px #6366f1',
+                        '&:hover': {
+                            boxShadow: '0 0 20px #a855f7',
+                            background: 'linear-gradient(135deg, #2563eb, #7c3aed)',
+                        },
+                    }}
+                >
                     Submit Request
                 </Button>
             </Box>

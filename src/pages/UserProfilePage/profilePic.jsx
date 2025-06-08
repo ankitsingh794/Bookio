@@ -6,7 +6,7 @@ export const ProfilePic = () => {
         <div className="profile-pic">
             <div className="image"/>
 
-            <div className="text-wrapper"> Update/Insert a profile picture</div>
+            <div className="text-wrapper" style={{cursor:'pointer'}}> Update/Insert a profile picture</div>
         </div>
     );
 };

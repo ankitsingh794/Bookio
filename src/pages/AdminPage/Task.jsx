@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Button, TextField, Dialog, DialogActions, DialogContent, DialogTitle, IconButton } from '@mui/material';
 import { Add, Edit, Delete, Image } from '@mui/icons-material';
-import './Style/Task.css'; // Custom styling
+import './Style/Task.css'; 
 
 const Task = () => {
   const [tasks, setTasks] = useState([]);
@@ -50,10 +50,27 @@ const Task = () => {
   };
 
   return (
-    <div className="task-container">
+    <div className="task-container" style={{ marginLeft: '0' }}>
       <div className="task-header">
-        <h2>Tasks</h2>
-        <Button variant="contained" startIcon={<Add />} onClick={() => handleOpen()}>Add Task</Button>
+        <h2>Event Management</h2>
+        <Button
+          variant="contained"
+          startIcon={<Add />}
+          onClick={() => handleOpen()}
+          sx={{
+            background: 'linear-gradient(135deg, #3b82f6, #9333ea)',
+            color: '#fff',
+            fontWeight: '600',
+            boxShadow: '0 0 12px #6366f1',
+            '&:hover': {
+              boxShadow: '0 0 20px #a855f7',
+              background: 'linear-gradient(135deg, #2563eb, #7c3aed)',
+            },
+          }}
+        >
+          Add Events
+        </Button>
+
       </div>
 
       <TableContainer component={Paper} className="task-table">

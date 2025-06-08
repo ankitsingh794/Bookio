@@ -1,211 +1,99 @@
-:root {
-    font-size: 16px; /* Base for rem units */
-}
-
 .box {
-    max-width: 40%; /* 626px */
-    width: 100%;
-    margin: 0 2rem;
-    padding: 2rem 1rem;
-    height: fit-content;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  min-width: 40vw;
+  border-color: #ffffff;
+  border-radius: 5rem;
+  margin-left: 5rem;
+  margin-top: 2rem;
 }
 
-.box .personal-info {
-    width: 100%;
-    position: relative;
-    margin-top: 4.25rem; /* 100px */
+.overlap{
+    padding: 3rem;
+}
+.heading .overlap-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-.box .overlap {
-    height: auto;
-    position: relative;
+.text-wrapper-4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #7DF9FF;
+  text-shadow: 0 0 6px rgba(125, 249, 255, 0.5);
+  cursor: pointer;
 }
 
-.box .form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem 2rem; /* 24px 32px */
-    position: relative;
-    width: 100%;
-    margin-top: 2rem; /* 82px */
-}
-
-.box .input,
-.box .input-4,
-.box .input-5 {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    width: 100%;
-    height: auto;
-    margin-bottom: 0;
-}
-
-.box .input-4 {
-    margin-bottom: 0.625rem;
-}
-
-.box .input-5 {
-    margin-bottom: 0.625rem;
-}
-
-.box .input-2,
-.box .input-3 {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    width: 46%;
-    height: auto;
-}
-
-.box .input-3 {
-    margin-left: 0.625rem;
-}
-
-.box .text-wrapper-2 {
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.5rem;
-    color: black;
-    font-family: "Inter-Medium", Arial, Helvetica, sans-serif;
-}
-
-.box .field,
-.box .label-wrapper {
-    background-color: #ffffff;
-    border: 1px solid #dfdfdf;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.0625rem 0.125rem #0000000d;
-    padding: 0.75rem 1rem;
-    width: 100%;
-    color: #828282;
-    font-size: 1rem;
-    font-family: "Inter-Medium", Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    line-height: 1.5rem;
-}
-
-.box .label-wrapper {
-    text-decoration: underline;
-}
-
-.box .label,
-.box .label-2 {
-    color: #828282;
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.5rem;
-    font-family: "Inter-Medium", Arial, Helvetica, sans-serif;
-    white-space: nowrap;
-}
-
-.box .docked-input-date {
-    width: 100%;
-    height: auto;
-}
-
-.box .div-wrapper {
-    background-color: #ffffff;
-    border: 1px solid #dfdfdf;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.0625rem 0.125rem #0000000d;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 0.5rem;
-    padding: 0.75rem 1rem;
-    width: 100%;
-    overflow: hidden;
-}
-
-.box .button {
-    all: unset;
-    background-color: black;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.0625rem 0.125rem #0000000d;
-    display: flex;
-    justify-content: center;
-    padding: 1rem 1rem;
-    width: 35%;
-}
-
-.box .text-wrapper-3 {
-    color: white;
-    font-size: 1.25rem;
-    font-weight: 500;
-    font-family: "Inter-Medium", Arial, Helvetica, sans-serif;
-    white-space: nowrap;
-}
-
-.box .heading {
-    position: relative;
-    width: 100%;
-    margin-bottom: 1rem;
-}
-
-.box .overlap-group {
-    position: relative;
-    width: 100%;
-    height: auto;
-}
-
-.box .circular {
-    width: 3rem !important;
-    height: 3rem !important;
-    position: absolute !important;
-    top: 0.625rem !important;
-    right: 0 !important;
-}
-
-.box .text-wrapper-4 {
-    font-family: "Joan-Regular", Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-    font-weight: 400;
-    line-height: 3rem;
-    text-decoration: underline;
-    color: black;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .box .input-2,
-    .box .input-3 {
-        width: 100%;
-    }
-
-    .box {
-        padding: 1.5rem 1rem;
-    }
-
-    .box .circular {
-        position: relative !important;
-        left: auto !important;
-        top: auto !important;
-        margin: 1rem auto;
-    }
-}
-
-.custom-dob-input .MuiOutlinedInput-root {
+/* --- MUI TextField theming --- */
+.MuiInputBase-root {
+  background-color: #1f2937;
   border-radius: 8px;
-  border-color: #D0BCFF;
+  color: #ffffff;
 }
 
-.custom-dob-input .MuiInputLabel-root {
-  color: black;
+.MuiInputBase-input {
+  color: #ffffff;
 }
 
-.custom-dob-input .MuiOutlinedInput-notchedOutline {
-  border-color: #D0BCFF;
+.MuiOutlinedInput-root fieldset {
+  border-color: #374151;
 }
 
-.custom-dob-input:hover .MuiOutlinedInput-notchedOutline {
-  border-color: #B69DF8;
+.MuiOutlinedInput-root:hover fieldset {
+  border-color: #7DF9FF;
 }
 
-.custom-dob-input.Mui-focused .MuiOutlinedInput-notchedOutline {
-  border-color: #B69DF8;
+.MuiOutlinedInput-root.Mui-focused fieldset {
+  border-color: #10b981;
+  box-shadow: 0 0 6px #10b98180;
 }
 
-.custom-dob-input .MuiSvgIcon-root {
-  color: #CAC4D0;
+.MuiInputLabel-root {
+  color: #9ca3af;
+}
+
+.MuiInputLabel-root.Mui-focused {
+  color: #10b981;
+}
+
+/* --- Buttons --- */
+.button {
+  background-color: #6bc5ca;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: stretch;
+  margin: 0.625rem;
+  margin-top: 2rem;
+  align-self: center;
+}
+
+.button:hover {
+  background-color: #5a9ea1;
+  transform: scale(1.03);
+}
+
+.button:active {
+  transform: scale(0.97);
+}
+
+.text-wrapper-3 {
+  text-align: center;
+}
+
+/* Optional DOB Picker slot styling if needed */
+.docked-input-date {
+    padding-top: 2rem;
+}
+
+
+.bgroup{
+    display: flex;
+    flex-direction: row;
 }

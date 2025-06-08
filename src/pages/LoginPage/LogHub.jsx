@@ -1,16 +1,16 @@
 import React from "react";
-import { Navbar1 } from "./navbar-1";
+import { Lnavigation } from "../../components/Navigation";
 import Register from "./Register";
-// import ForgPass from "./ForgotPass";
-// import Login from "./Login";
-import { NavigationFooter } from "./NavigationFooter-2";
+import ForgPass from "./ForgotPass";
+import Login from "./Login";
+import { NavigationFooter } from "../../components/NavigationFooter";
 import "./Style/LogHub.css";
 
-export const LogHub = () => {
+export const RegisterForm = () => {
     return (
         <div className="loghub" >
             <div className="div-4">
-                <Navbar1/>
+                <Lnavigation/>
                 <Register/>
                 {/* <ForgPass/> */}
                 {/* <Login/> */}
@@ -20,4 +20,27 @@ export const LogHub = () => {
     );
 };
 
-export default LogHub;
+export const LoginForm = () => {
+    return (
+        <div className="loghub" >
+            <div className="div-4">
+                <Lnavigation/>
+                {/* <ForgPass/> */}
+                <Login/>
+                <NavigationFooter/>
+            </div>
+        </div>
+    );
+};
+
+export const ForgotPassForm = () => {
+    return (
+        <div className="loghub" >
+            <div className="div-4">
+                <Lnavigation/>
+                <ForgPass/>
+                <NavigationFooter/>
+            </div>
+        </div>
+    );
+};

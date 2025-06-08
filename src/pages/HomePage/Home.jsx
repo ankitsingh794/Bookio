@@ -1,67 +1,86 @@
 import React from "react";
 import { Cards } from "./Cards";
+import { FaSearch } from "react-icons/fa";
 import { CardsWrapper } from "./CardsWrapper";
 import { Frame } from "./Frame";
-import { Navigation } from "./Navigation";
-import { NavigationFooter } from "./NavigationFooter";
+import { Lnavigation } from "../../components/Navigation";
+import { NavigationFooter } from "../../components/NavigationFooter";
 import { Section } from "./Section";
 import { Text } from "./Text";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectFade, Autoplay, Pagination, Navigation } from 'swiper/modules';
+import SearchBar from "../../components/SearchBar";
+
+
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/effect-fade';
+import 'swiper/css/navigation';
 import "./Style/Home.css";
 
 const Home = () => {
   return (
-    <div className="frame-screen">
-      <div className="home-wrapper">
-        <Navigation />
-        <div className="home">
-          <div className="group">
-            <div className="page-title">
-              <div className="text-wrapper-26">Featured</div>
-              <p className="text-wrapper-27">
-                Trending Events Right Now: Explore Top Events Near You!
-              </p>
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <div className="frame-screen">
+          <div className="home-wrapper">
+            <Lnavigation />
+            <SearchBar />
+            <div className="home">
+              <div className="group">
+                <Swiper
+                  effect={'fade'}
+                  slidesPerView={1}
+                  loop={true}
+                  autoplay={{
+                    delay: 5000,
+                    disableOnInteraction: false,
+                  }}
+                  pagination={{
+                    dynamicBullets: true,
+                    clickable: true,
+                  }}
+                  modules={[EffectFade, Pagination, Navigation, Autoplay]}
+                  className="mySwiper"
+                >
+                  <SwiperSlide>Slide 1</SwiperSlide>
+                  <SwiperSlide>Slide 2</SwiperSlide>
+                  <SwiperSlide>Slide 3</SwiperSlide>
+                  <SwiperSlide>Slide 4</SwiperSlide>
+                  <SwiperSlide>Slide 5</SwiperSlide>
+                  <SwiperSlide>Slide 6</SwiperSlide>
+                  <SwiperSlide>Slide 7</SwiperSlide>
+                  <SwiperSlide>Slide 8</SwiperSlide>
+                  <SwiperSlide>Slide 9</SwiperSlide>
+                </Swiper>
+
+
+                <button className="button-2">
+                  <div className="text-wrappers-21">Find Your Event Now</div>
+                </button>
+              </div>
+
+
+
+              <Frame />
+
+              <Text />
+
+
+
+              <Cards />
+
+
+              <CardsWrapper />
+
+
+              <Section />
+
             </div>
+            <NavigationFooter />
           </div>
-
-          <div className="overlap-group">
-            <div className="hero-image" />
-
-            <button className="button-2">
-              <div className="text-wrapper-21">Find Your Event Now</div>
-            </button>
-          </div>
-
-          <div className="text-wrapper-22">Discover Events Near You</div>
-
-          <Frame />
-
-          <div className="image-6" />
-          <div className="text-wrapper-24">Join the Community</div>
-          <Text />
-          <div className="buttons-2">
-            <button className="button-3">
-              <div className="text-wrapper-21">Join</div>
-            </button>
-
-            <button className="button-4">
-              <div className="text-wrapper-25">Explore the Community</div>
-            </button>
-          </div>
-
-          <div className="text-wrapper-23">Upcoming Events</div>
-
-          <Cards />
-
-          <div className="customer-reviews">Customer Reviews</div> 
-          <CardsWrapper />
-
-
-          <Section />
-
-          <NavigationFooter />
-          
         </div>
-        
       </div>
     </div>
   );

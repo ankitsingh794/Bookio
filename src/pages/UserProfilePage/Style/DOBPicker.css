@@ -1,0 +1,82 @@
+/* === DOB Input Field === */
+.custom-dob-input .MuiInputBase-root {
+  background-color: #111827; /* Deeper contrast for input box */
+  color: #e5e7eb; /* Soft white */
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+}
+
+.custom-dob-input .MuiOutlinedInput-notchedOutline {
+  border-color: #374151;
+}
+
+.custom-dob-input:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #7DF9FF;
+}
+
+.custom-dob-input.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #10b981;
+  box-shadow: 0 0 8px #10b98180;
+}
+
+.custom-dob-input .MuiInputLabel-root {
+  color: #9ca3af;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+.custom-dob-input.Mui-focused .MuiInputLabel-root {
+  color: #10b981;
+}
+
+.custom-dob-input .MuiFormHelperText-root {
+  color: #7DF9FF;
+  font-size: 0.75rem;
+  letter-spacing: 0.3px;
+}
+
+
+/* === Calendar Popover === */
+.MuiPickersPopper-root .MuiPaper-root {
+  background-color: #0f172a; /* darker than the form bg */
+  color: #ffffff;
+  border: 1px solid rgba(125, 249, 255, 0.25);
+  box-shadow: 0 0 15px rgba(125, 249, 255, 0.08);
+  font-family: 'Poppins', sans-serif;
+}
+
+.MuiPickersDay-root {
+  color: #f3f4f6;
+  font-weight: 500;
+}
+
+.MuiPickersDay-root.Mui-selected {
+  background-color: #10b981 !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 4px #10b98180;
+}
+
+.MuiPickersDay-root:hover {
+  background-color: rgba(125, 249, 255, 0.15);
+}
+
+.MuiTypography-root {
+  color: #7DF9FF;
+  font-weight: 600;
+}
+
+.MuiPickersCalendarHeader-label {
+  font-weight: bold;
+  color: #facc15;
+}
+
+.css-vycme6-MuiPickersInputBase-root-MuiPickersOutlinedInput-root{
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+}
+
+.css-1umw9bq-MuiSvgIcon-root{
+    fill: #f3f4f6 !important;
+}

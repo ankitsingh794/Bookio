@@ -1,5 +1,5 @@
 .profile-pic {
-    border: 0.1875rem solid #0b0b0b;
+    border: 0.1875rem solid #1f2937;
     border-radius: 0.75rem;
     width: 25rem;
     margin: 1rem 1rem;
@@ -13,13 +13,15 @@
     margin-top: 10rem;
     height: 33rem;
     left: 8rem;
+    background: linear-gradient(to bottom right, #0f172a, #1e293b);
+    box-shadow: 0 0 12px rgba(125, 249, 255, 0.08);
 }
 
 .profile-pic .image {
-    background: linear-gradient(0deg, rgba(247,247,247,1), rgba(247,247,247,1));
-    border: 0.3125rem solid black;
+    background: linear-gradient(0deg, #f3f4f6, #e5e7eb); /* subtle light gradient */
+    border: 0.3125rem solid #1f2937;
     border-radius: 0.75rem;
-    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
     width: 100%;
     height: auto;
     aspect-ratio: 419 / 499;
@@ -29,14 +31,14 @@
 
 .profile-pic .text-wrapper {
     margin-top: 1rem;
-    color: black;
-    font-family: "Inter-Medium", Arial, Helvetica, sans-serif;
+    color: #7DF9FF;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.25rem;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.875rem;
     text-align: center;
     text-decoration: underline;
-    text-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    text-shadow: 0 0 6px rgba(125, 249, 255, 0.25);
     width: 100%;
     position: inherit;
 }
