@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import { Lnavigation } from "../../components/Navigation";
 import { NavigationFooter } from "../../components/NavigationFooter";
 import { Box } from "./personalInfo";
-import { ProfilePic } from "./ProfilePic";
+import { ProfilePic } from "./profilePic";
 import TicketRelatedInfo from "./TicketRelatedInfo";
 import Favourites from "./Favourites";
 import "./Style/userProfile.css";
