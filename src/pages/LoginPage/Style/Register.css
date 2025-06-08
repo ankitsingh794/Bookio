@@ -23,7 +23,6 @@
   border: 1px solid rgba(255, 255, 255, 0.12);
 
   box-shadow: 0 0 30px rgba(147, 51, 234, 0.15);
-  color: #e0e7ff;
   animation: pulseBox 6s infinite ease-in-out;
   position: relative;
   z-index: 10;
@@ -51,8 +50,6 @@
   backdrop-filter: blur(8px); /* glassy effect */
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
-
-  color: #f1f5f9;
 }
 
 
