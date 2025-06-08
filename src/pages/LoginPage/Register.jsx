@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
-import { TextField, Button, Box, Typography, Grid, Paper } from "@mui/material";
+import { TextField, Button, Box, Typography, Paper } from "@mui/material";
 import './Style/Register.css';
 
 const Register = () => {
@@ -17,7 +17,8 @@ const Register = () => {
     if (element.nextSibling) {
       element.nextSibling.focus();
     }
-  }
+  };
+
   const handleKeyDown = (e, index) => {
     if (e.key === "Backspace") {
       const newOtp = [...otp];
@@ -33,27 +34,31 @@ const Register = () => {
         setOtp(newOtp);
       }
     }
-    
   };
 
-
-
   return (
-    <Box className="register-container" style={{color:'#FFFFFF'}}>
-      <Paper elevation={3} className="register-box" style={{color:'#FFFFFF'}}>
-        <Typography variant="h4" style={{color:'#FFFFFF'}} gutterBottom>Register</Typography>
+    <Box
+      className="register-container"
+      sx={{ position: 'relative', zIndex: 10, color: '#FFFFFF' }}
+    >
+      <Paper
+        elevation={3}
+        className="register-box"
+        sx={{ position: 'relative', zIndex: 10, color: '#FFFFFF' }}
+      >
+        <Typography variant="h4" gutterBottom>Register</Typography>
 
-        <TextField label="Email" fullWidth margin="normal" style={{color:'#FFFFFF'}}/>
-        <TextField label="Phone No" fullWidth margin="normal" style={{color:'#FFFFFF'}}/>
-        <TextField label="Password" type="password" fullWidth margin="normal" style={{color:'#FFFFFF'}}/>
-        <TextField label="Conirm Password" type="password" fullWidth margin="normal" style={{color:'#FFFFFF'}}/>
+        <TextField label="Email" fullWidth margin="normal" />
+        <TextField label="Phone No" fullWidth margin="normal" />
+        <TextField label="Password" type="password" fullWidth margin="normal" />
+        <TextField label="Confirm Password" type="password" fullWidth margin="normal" />
 
-        <Box className="otp-section">
-          <Typography variant="subtitle1" style={{color:'#FFFFFF'}} >OTP</Typography>
+        <Box className="otp-section" sx={{ position: 'relative', zIndex: 10 }}>
+          <Typography variant="subtitle1">OTP</Typography>
 
           {showOtp && (
             <>
-              <Box className="otp-inputs" style={{color:'#FFFFFF'}} >
+              <Box className="otp-inputs">
                 {otp.map((data, index) => (
                   <input
                     key={index}
@@ -67,13 +72,7 @@ const Register = () => {
                 ))}
               </Box>
 
-              <Button
-                variant="contained"
-                size="small"
-                className="otp-btn"
-                style={{ marginRight: "39px" ,color:'#FFFFFF'}}
-                
-              >
+              <Button variant="contained" size="small" className="otp-btn">
                 Verify
               </Button>
             </>
@@ -86,10 +85,10 @@ const Register = () => {
               onClick={() => {
                 setShowOtp(true);
                 setOtpSent(true);
-                // triggerOtpSend(); <-- call your API here
+                // Call your OTP API here
               }}
               className="otp-btn"
-              style={{ marginTop: "10px", color:'#FFFFFF' }}
+              sx={{ mt: 1 }}
             >
               Get OTP
             </Button>
@@ -98,25 +97,24 @@ const Register = () => {
               variant="outlined"
               size="small"
               onClick={() => {
-                // triggerOtpSend(); <-- call your API again
+                // Resend OTP API
               }}
               className="otp-btn-resend-btn"
-              style={{color:'#FFFFFF'}}
             >
               Resend OTP
             </Button>
           )}
         </Box>
 
-        <Button fullWidth variant="contained" className="register-btn" style={{color:'#FFFFFF'}}>
+        <Button fullWidth variant="contained" className="register-btn">
           Register
         </Button>
 
-        <Typography variant="body2" className="links" style={{color:'#FFFFFF'}}>
-          <Link to="/loghub/forgot-password" style={{color:'#FFFFFF', cursor: 'pointer'}} >Forgot password?</Link>
+        <Typography variant="body2" className="links">
+          <Link to="/loghub/forgot-password">Forgot password?</Link>
         </Typography>
-        <Typography variant="body2" className="links" style={{color:'#FFFFFF'}}>
-          Already have an account? <a href="#" style={{color:'#FFFFFF'}}>Login!</a>
+        <Typography variant="body2" className="links">
+          Already have an account? <Link to="/loghub/login">Login!</Link>
         </Typography>
       </Paper>
     </Box>
