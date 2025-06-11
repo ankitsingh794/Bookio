@@ -80,6 +80,7 @@ const Messages = () => {
                     placeholder="Search Feedbacks"
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
+                    fullWidth={window.matchMedia("(max-width: 600px)").matches}
                 />
             </div>
 
@@ -90,9 +91,9 @@ const Messages = () => {
                             <TableCell>User</TableCell>
                             <TableCell>Email</TableCell>
                             <TableCell>Feedback</TableCell>
-                            <TableCell>Sentiment</TableCell>
-                            <TableCell>Date</TableCell>
-                            <TableCell>Actions</TableCell>
+                            <TableCell className="sentiment-col">Sentiment</TableCell>
+                            <TableCell className="date-col">Date</TableCell>
+                            <TableCell className="actions-col">Actions</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -103,11 +104,11 @@ const Messages = () => {
                                     <TableCell>{fb.user}</TableCell>
                                     <TableCell>{fb.email}</TableCell>
                                     <TableCell>{fb.feedback.slice(0, 50)}...</TableCell>
-                                    <TableCell>
+                                    <TableCell className="sentiment-col">
                                         <Chip label={sentiment.label} color={sentiment.color} size="small" variant="outlined" />
                                     </TableCell>
-                                    <TableCell>{fb.date}</TableCell>
-                                    <TableCell>
+                                    <TableCell className="date-col">{fb.date}</TableCell>
+                                    <TableCell className="actions-col">
                                         <Button size="small" variant="outlined" onClick={() => setSelectedFeedback(fb)}>
                                             View
                                         </Button>

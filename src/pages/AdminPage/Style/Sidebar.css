@@ -9,3 +9,65 @@
 .sidebar .MuiListItem-root.Mui-selected {
   background-color: #374151;
 }
+
+@media (max-width: 600px) {
+  .sidebar-paper {
+    width: 100vw !important;
+    min-width: 0 !important;
+    max-width: 100vw !important;
+    left: 0 !important;
+    top: 0 !important;
+    background-color: #111827;
+    color: #fff;
+    box-sizing: border-box;
+    z-index: 1300;
+  }
+
+  .sidebar {
+    width: 100vw !important;
+    min-width: 0 !important;
+    max-width: 100vw !important;
+  }
+
+  .MuiDrawer-paper {
+    width: 100vw !important;
+    min-width: 0 !important;
+    max-width: 100vw !important;
+    left: 0 !important;
+    top: 0 !important;
+    box-sizing: border-box;
+    z-index: 1300;
+  }
+
+  .MuiListItem-root,
+  .MuiListItemText-root {
+    font-size: 1rem !important;
+    min-height: 44px;
+    padding: 0.5rem 1rem !important;
+  }
+
+  .MuiListItemIcon-root {
+    min-width: 36px !important;
+    font-size: 1.3rem !important;
+  }
+
+  .MuiBadge-root {
+    font-size: 1rem !important;
+  }
+
+  .MuiListItemText-primary {
+    font-size: 1rem !important;
+  }
+
+  .MuiDivider-root {
+    margin: 0.5rem 0 !important;
+  }
+
+  /* Brand/logo */
+  .sidebar-brand,
+  .MuiBox-root {
+    font-size: 2rem !important;
+    padding: 0.7rem 0.2rem !important;
+    text-align: left !important;
+  }
+}

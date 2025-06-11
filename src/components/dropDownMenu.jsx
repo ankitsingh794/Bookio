@@ -12,12 +12,18 @@ import {
   Popper,
   MenuItem,
   MenuList,
-  Stack
+  Stack,
+  useTheme,
+  useMediaQuery
 } from '@mui/material';
 
 const DropdownMenu = () => {
   const [open, setOpen] = useState(false);
   const anchorRef = useRef(null);
+
+  // Responsive font size
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
   const handleToggle = () => {
     setOpen((prevOpen) => !prevOpen);
@@ -28,6 +34,23 @@ const DropdownMenu = () => {
       return;
     }
     setOpen(false);
+  };
+
+  // Responsive styles
+  const menuItemStyle = {
+    fontSize: isMobile ? '0.95rem' : '1.1rem',
+    padding: isMobile ? '0.6rem 1.2rem' : '0.8rem 2rem',
+    display: 'flex',
+    alignItems: 'center',
+    gap: isMobile ? '0.5rem' : '1rem',
+  };
+
+  const buttonStyle = {
+    fontSize: isMobile ? '1rem' : '1.2rem',
+    padding: isMobile ? '0.5rem 1rem' : '0.75rem 1.5rem',
+    minWidth: isMobile ? '120px' : '160px',
+    display: 'flex',
+    alignItems: 'center',
   };
 
   return (
@@ -41,8 +64,9 @@ const DropdownMenu = () => {
           aria-haspopup="true"
           onClick={handleToggle}
           variant="contained"
+          style={buttonStyle}
         >
-          Settings <IoSettingsSharp style={{ marginLeft: '8px', verticalAlign: 'middle' }} />
+          Settings <IoSettingsSharp style={{ marginLeft: isMobile ? '6px' : '8px', verticalAlign: 'middle', fontSize: isMobile ? '1.1em' : '1.3em' }} />
         </Button>
         <Popper
           open={open}
@@ -51,6 +75,7 @@ const DropdownMenu = () => {
           placement="bottom-start"
           transition
           disablePortal
+          style={{ zIndex: 1300, minWidth: isMobile ? '180px' : '220px' }}
         >
           {({ TransitionProps, placement }) => (
             <Grow
@@ -67,9 +92,19 @@ const DropdownMenu = () => {
                     id="composition-menu"
                     aria-labelledby="composition-button"
                   >
-                    <MenuItem onClick={handleClose}>Change password <FaUserLock style={{ marginLeft: '8px' }} /></MenuItem>
-                    <MenuItem onClick={handleClose}>Delete Account <MdDelete style={{ marginLeft: '29px' }} /></MenuItem>
-                    <MenuItem onClick={handleClose}>Light/Dark Mode <CiLight style={{ marginLeft: '8px' }} /> <CiDark /></MenuItem>
+                    <MenuItem onClick={handleClose} style={menuItemStyle}>
+                      Change password
+                      <FaUserLock style={{ marginLeft: isMobile ? '6px' : '8px', fontSize: isMobile ? '1em' : '1.2em' }} />
+                    </MenuItem>
+                    <MenuItem onClick={handleClose} style={menuItemStyle}>
+                      Delete Account
+                      <MdDelete style={{ marginLeft: isMobile ? '16px' : '29px', fontSize: isMobile ? '1em' : '1.2em' }} />
+                    </MenuItem>
+                    <MenuItem onClick={handleClose} style={menuItemStyle}>
+                      Light/Dark Mode
+                      <CiLight style={{ marginLeft: isMobile ? '6px' : '8px', fontSize: isMobile ? '1em' : '1.2em' }} />
+                      <CiDark style={{ fontSize: isMobile ? '1em' : '1.2em' }} />
+                    </MenuItem>
                   </MenuList>
                 </ClickAwayListener>
               </Paper>

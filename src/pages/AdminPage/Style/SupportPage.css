@@ -35,3 +35,74 @@
   text-align: center;
   text-shadow: 0 0 10px #6366f1;
 }
+
+@media (max-width: 600px) {
+  .support-page-container {
+    padding: 0.7rem 0.2rem;
+    max-width: 100vw;
+    width: 100vw;
+    box-sizing: border-box;
+    font-size: 0.98rem;
+  }
+
+  .support-title {
+    font-size: 1.3rem !important;
+    margin-bottom: 2.5rem !important;
+    margin-top: 1.5rem !important;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    text-align: left;
+  }
+
+  .section-title {
+    font-size: 1.1rem !important;
+    margin-bottom: 0.7rem !important;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    text-align: left;
+  }
+
+  .faq-section {
+    margin-bottom: 1.5rem;
+    padding: 0;
+  }
+
+  .MuiAccordion-root {
+    margin-bottom: 0.5rem !important;
+  }
+
+  .MuiAccordionSummary-root,
+  .MuiAccordionDetails-root {
+    padding-left: 0.2rem !important;
+    padding-right: 0.2rem !important;
+  }
+
+  .MuiTypography-root {
+    font-size: 0.98rem !important;
+  }
+
+  .contact-form {
+    padding: 0.7rem 0.2rem;
+    border-radius: 0.7rem;
+    max-width: 100vw;
+    margin: 0 auto;
+    font-size: 0.98rem;
+  }
+
+  .MuiTextField-root {
+    font-size: 0.95rem !important;
+    margin-bottom: 0.7rem !important;
+  }
+
+  .MuiInputBase-root,
+  .MuiInputLabel-root {
+    font-size: 0.95rem !important;
+  }
+
+  .MuiButton-root {
+    font-size: 0.98rem !important;
+    padding: 0.5rem 1.2rem !important;
+    min-width: 90px;
+    margin-top: 0.5rem !important;
+  }
+}

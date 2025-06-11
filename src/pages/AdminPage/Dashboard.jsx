@@ -46,7 +46,7 @@ export const Setting = () => {
   return (
     <Box sx={{ display: 'flex' }}>
       <Sidebar />
-      <Box sx={{ flexGrow: 1, ml: '0' }}>
+      <Box sx={{ flexGrow: 1, ml: '0' }} className="main-content">
         {/* <OrdersTable orders={mockOrders} />  */}
              {/* <Task/> */}
             {/* <Messages/> */}
@@ -63,7 +63,7 @@ export const Support = () => {
   return (
     <Box sx={{ display: 'flex' }}>
       <Sidebar />
-      <Box sx={{ flexGrow: 1, ml: '0' }}>
+      <Box sx={{ flexGrow: 1, ml: '0' }} className="main-content">
         {/* <OrdersTable orders={mockOrders} />  */}
              {/* <Task/> */}
             {/* <Messages/> */}
@@ -80,7 +80,7 @@ export const UserList = () => {
   return (
     <Box sx={{ display: 'flex' }}>
       <Sidebar />
-      <Box sx={{ flexGrow: 1, ml: '0' }}>
+      <Box sx={{ flexGrow: 1, ml: '0' }} className="main-content">
         {/* <OrdersTable orders={mockOrders} />  */}
              {/* <Task/> */}
             {/* <Messages/> */}
@@ -97,7 +97,7 @@ export const Feedback = () => {
   return (
     <Box sx={{ display: 'flex' }}>
       <Sidebar />
-      <Box sx={{ flexGrow: 1, ml: '0' }}>
+      <Box sx={{ flexGrow: 1, ml: '0' }} className="main-content">
         {/* <OrdersTable orders={mockOrders} />  */}
              {/* <Task/> */}
             <Messages/>
@@ -114,7 +114,7 @@ export const Tasks = () => {
   return (
     <Box sx={{ display: 'flex' }}>
       <Sidebar />
-      <Box sx={{ flexGrow: 1, ml: '0' }}>
+      <Box sx={{ flexGrow: 1, ml: '0' }} className="main-content">
         {/* <OrdersTable orders={mockOrders} />  */}
              <Task/>
             {/* <Messages/> */}
@@ -130,7 +130,7 @@ export const OrderDetails = () => {
   return (
     <Box sx={{ display: 'flex' }}>
       <Sidebar />
-      <Box sx={{ flexGrow: 1, ml: '0' }}>
+      <Box sx={{ flexGrow: 1, ml: '0' }} className="main-content">
         <OrdersTable orders={mockOrders} /> 
              {/* <Task/> */}
             {/* <Messages/> */}

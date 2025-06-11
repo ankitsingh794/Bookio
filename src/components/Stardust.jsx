@@ -3,40 +3,61 @@ import React, { useRef, useMemo, useEffect, useState } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import * as THREE from "three";
 
+// Utility hook for responsive detection
+function useIsMobile() {
+  return window.matchMedia("(max-width: 600px)").matches;
+}
+
 function Stardust() {
   const points = useRef();
   const { size } = useThree();
+  const isMobile = useIsMobile();
 
   const [mouse, setMouse] = useState({ x: 0, y: 0 });
 
-  // Particle count based on screen width
+  // Particle count and spread based on screen size
   const particles = useMemo(() => {
-    const count = Math.floor(size.width * 0.4); // ~0.4 particles per px
+    // Fewer particles and smaller spread on mobile for performance and clarity
+    const density = isMobile ? 0.15 : 0.4;
+    const spread = isMobile ? 10 : 20;
+    const count = Math.floor(size.width * density);
     const positions = new Float32Array(count * 3);
     for (let i = 0; i < count * 3; i++) {
-      positions[i] = (Math.random() - 0.5) * 20;
+      positions[i] = (Math.random() - 0.5) * spread;
     }
     return positions;
-  }, [size.width]);
+  }, [size.width, isMobile]);
 
-  // Update parallax drift on mouse move
+  // Update parallax drift on mouse/touch move
   useEffect(() => {
-    const handleMouseMove = (e) => {
+    const handlePointerMove = (e) => {
+      let clientX, clientY;
+      if (e.touches && e.touches.length > 0) {
+        clientX = e.touches[0].clientX;
+        clientY = e.touches[0].clientY;
+      } else {
+        clientX = e.clientX;
+        clientY = e.clientY;
+      }
       setMouse({
-        x: (e.clientX / size.width - 0.5) * 2,
-        y: (e.clientY / size.height - 0.5) * 2,
+        x: (clientX / size.width - 0.5) * 2,
+        y: (clientY / size.height - 0.5) * 2,
       });
     };
-    window.addEventListener("mousemove", handleMouseMove);
-    return () => window.removeEventListener("mousemove", handleMouseMove);
+    window.addEventListener("mousemove", handlePointerMove);
+    window.addEventListener("touchmove", handlePointerMove, { passive: true });
+    return () => {
+      window.removeEventListener("mousemove", handlePointerMove);
+      window.removeEventListener("touchmove", handlePointerMove);
+    };
   }, [size]);
 
   useFrame(() => {
     if (!points.current) return;
-    points.current.rotation.y += 0.0005;
-    points.current.rotation.x += 0.00025;
-    points.current.position.x = mouse.x * 0.5;
-    points.current.position.y = -mouse.y * 0.5;
+    points.current.rotation.y += isMobile ? 0.0002 : 0.0005;
+    points.current.rotation.x += isMobile ? 0.0001 : 0.00025;
+    points.current.position.x = mouse.x * (isMobile ? 0.2 : 0.5);
+    points.current.position.y = -mouse.y * (isMobile ? 0.2 : 0.5);
   });
 
   return (
@@ -52,10 +73,10 @@ function Stardust() {
       <pointsMaterial
         attach="material"
         color="#a2ccff"
-        size={0.05}
+        size={isMobile ? 0.09 : 0.05} // Larger points on mobile for visibility
         sizeAttenuation
         transparent
-        opacity={0.6}
+        opacity={isMobile ? 0.7 : 0.6}
         depthWrite={false}
         blending={THREE.AdditiveBlending}
       />
@@ -64,6 +85,7 @@ function Stardust() {
 }
 
 export default function StardustCanvas() {
+  const isMobile = useIsMobile();
   return (
     <Canvas
       style={{
@@ -71,11 +93,15 @@ export default function StardustCanvas() {
         top: 0,
         left: 0,
         zIndex: 1,
-        width: "100%",
-        height: "100%",
+        width: "100vw",
+        height: "100vh",
         pointerEvents: "none",
+        touchAction: "none",
       }}
-      camera={{ position: [0, 0, 5], fov: 75 }}
+      camera={{
+        position: [0, 0, isMobile ? 7 : 5], // Pull back camera on mobile for more coverage
+        fov: isMobile ? 90 : 75,
+      }}
     >
       <Stardust />
     </Canvas>

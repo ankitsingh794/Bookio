@@ -107,3 +107,65 @@
   border-radius: 20px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
+
+@media (max-width: 600px) {
+  .frame {
+    gap: 1rem;
+    width: 100vw;
+    padding: 1rem 0.2rem;
+    margin: 1.5rem 0 0 0 !important;
+    box-sizing: border-box;
+  }
+
+  .frame .text-wrapper-22 {
+    font-size: 1.5rem;
+    text-align: left;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .frame .card-collect {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .frame .swiper {
+    width: 90vw;
+    height: 38vh;
+    min-height: 180px;
+    max-width: 98vw;
+    margin-top: 1vh;
+  }
+
+  .frame .swiper-slide {
+    font-size: 1rem;
+    border-radius: 12px;
+    min-height: 120px;
+    padding: 0.5rem;
+  }
+
+  .frame .card {
+    gap: 0.7rem;
+    padding: 0.5rem 0.2rem;
+    max-width: 100vw;
+  }
+
+  .frame .image,
+  .frame .image-2,
+  .frame .image-3 {
+    aspect-ratio: 16 / 9;
+    border-radius: 0.3rem;
+    min-height: 110px;
+  }
+
+  .frame .copy {
+    gap: 0.15rem;
+    padding: 0.2rem 0;
+  }
+
+  .frame .text-wrapper,
+  .frame .div {
+    font-size: 0.95rem;
+    line-height: 1.3rem;
+  }
+}

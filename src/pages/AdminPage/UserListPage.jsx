@@ -178,8 +178,8 @@ const UserListPage = () => {
                             <TableCell>Email</TableCell>
                             <TableCell>Role</TableCell>
                             <TableCell>Status</TableCell>
-                            <TableCell>Registration Date</TableCell>
-                            <TableCell>Actions</TableCell>
+                            <TableCell className="reg-date-col">Registration Date</TableCell>
+                            <TableCell className="user-table-cell-actions">Actions</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -201,7 +201,7 @@ const UserListPage = () => {
                                 <TableCell>{user.email}</TableCell>
                                 <TableCell>{user.role}</TableCell>
                                 <TableCell>{user.status}</TableCell>
-                                <TableCell>{format(new Date(user.regDate), 'yyyy-MM-dd')}</TableCell>
+                                <TableCell className="reg-date-col">{format(new Date(user.regDate), 'yyyy-MM-dd')}</TableCell>
                                 <TableCell className="user-table-cell-actions">
                                     <Button size="small" variant="outlined" sx={{ mr: 1 }} onClick={() => handleOpenModal(user)}>View</Button>
                                     <Button size="small" variant="outlined" color="primary" sx={{ mr: 1 }}>Edit</Button>

@@ -40,3 +40,36 @@
   display: block;
   width: 100%;
 }
+
+@media (max-width: 600px) {
+  .cards {
+    gap: 1rem;
+    width: 100vw;
+    padding: 1rem 0.2rem;
+    margin: 1.5rem 0 0 0 !important;
+    box-sizing: border-box;
+  }
+
+  .cards .text-wrapper-23 {
+    font-size: 1.5rem;
+    text-align: left;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .cards .swiper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .cards .swiper-slide {
+    width: 85vw;
+    height: 32vh;
+    min-height: 180px;
+    max-width: 95vw;
+  }
+
+  .cards .swiper-slide img {
+    border-radius: 0.7rem;
+  }
+}

@@ -14,3 +14,62 @@
     margin-bottom: 20px;
     background-color: transparent !important;
 }
+
+@media (max-width: 600px) {
+  .settings-container {
+    padding: 0.7rem 0.2rem;
+    max-width: 100vw;
+    width: 100vw;
+    box-sizing: border-box;
+    font-size: 0.98rem;
+  }
+
+  .settings-title {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    text-align: left;
+  }
+
+  .settings-section {
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border-radius: 0.7rem;
+    font-size: 0.98rem;
+  }
+
+  .MuiTypography-h4,
+  .MuiTypography-h6 {
+    font-size: 1.1rem !important;
+    line-height: 1.4;
+    margin-bottom: 0.7rem !important;
+  }
+
+  .MuiTextField-root {
+    font-size: 0.95rem;
+    margin-bottom: 0.7rem !important;
+  }
+
+  .MuiInputBase-root,
+  .MuiInputLabel-root {
+    font-size: 0.95rem !important;
+  }
+
+  .MuiButton-root {
+    font-size: 0.98rem !important;
+    padding: 0.5rem 1.2rem !important;
+    min-width: 90px;
+    margin-top: 0.5rem !important;
+  }
+
+  .MuiDivider-root {
+    margin: 1.2rem 0 !important;
+  }
+
+  .MuiFormControlLabel-root {
+    font-size: 0.95rem !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}

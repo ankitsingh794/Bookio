@@ -14,3 +14,43 @@
     position: relative;
     width: 100%;
 }
+
+@media (max-width: 600px) {
+  .event {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .event .div-5 {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  /* Example: make all headings and text inside .event smaller on mobile */
+  .event h1,
+  .event h2,
+  .event h3,
+  .event h4,
+  .event h5,
+  .event h6 {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin: 0.5rem 0;
+  }
+
+  .event p,
+  .event li,
+  .event span,
+  .event label,
+  .event .text,
+  .event .div {
+    font-size: 0.98rem;
+    line-height: 1.5;
+  }
+}

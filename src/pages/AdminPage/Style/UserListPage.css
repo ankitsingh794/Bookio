@@ -1,16 +1,38 @@
-
 .user-management-container {
   padding: 16px;
 }
 
 .user-management-title {
-  margin-bottom: 16px;
+  margin-bottom: 5vh; /* Increased for better spacing */
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #10b981;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 12px #3b82f6, 0 1px 0 #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  line-height: 1.2;
+  border-left: 6px solid #3b82f6;
+  padding-left: 1rem;
+  background: linear-gradient(90deg, #0ea5e9 0%, #a21caf 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.user-management-title::before {
+  content: "👥";
+  font-size: 2.2rem;
+  margin-right: 0.5rem;
+  filter: drop-shadow(0 0 6px #7DF9FF);
 }
 
 .user-toolbar {
   display: flex;
   justify-content: space-between;
   margin-bottom: 16px;
+  margin-top: 7vh;
 }
 
 .user-filters {
@@ -27,4 +49,113 @@
 
 .user-table-cell-actions > button {
   margin-right: 8px;
+}
+
+@media (max-width: 600px) {
+  .user-management-container {
+    padding: 0.7rem 0.2rem;
+    width: 100vw;
+    max-width: 100vw;
+    box-sizing: border-box;
+    font-size: 0.98rem;
+  }
+
+  .user-management-title {
+    margin-bottom: 18px; /* More space below heading on mobile */
+    font-size: 1.3rem;
+    gap: 0.4rem;
+    text-shadow: 0 1px 6px #3b82f6, 0 1px 0 #fff;
+    padding-left: 0.6rem;
+    border-left-width: 4px;
+  }
+  .user-management-title::before {
+    font-size: 1.5rem;
+    margin-right: 0.2rem;
+  }
+
+  .user-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.7rem;
+    margin-bottom: 1rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    margin-top: 0 !important;
+    margin-bottom: 1.2rem !important;
+  }
+
+  .user-toolbar .MuiTextField-root {
+    width: 100% !important;
+    font-size: 1rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .user-filters {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .user-filters .MuiFormControl-root {
+    min-width: 0 !important;
+    width: 100% !important;
+  }
+
+  .bulk-action-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+    font-size: 0.98rem;
+  }
+
+  .user-table-container {
+    width: 100vw !important;
+    min-width: 0 !important;
+    overflow-x: auto !important;
+    border-radius: 0.7rem !important;
+  }
+
+  .MuiTable-root {
+    min-width: 600px !important;
+    font-size: 0.95rem !important;
+  }
+
+  .MuiTableCell-root {
+    font-size: 0.85rem !important;
+    padding: 0.4rem 0.3rem !important;
+    max-width: 120px !important;
+    word-break: break-word !important;
+    vertical-align: middle !important;
+  }
+
+  /* Prevent wrapping for actions and registration date columns */
+  .MuiTableCell-root.user-table-cell-actions,
+  .MuiTableCell-root.reg-date-col {
+    white-space: nowrap !important;
+    min-width: 80px !important;
+    max-width: 110px !important;
+    text-align: center !important;
+    padding-left: 0.2rem !important;
+    padding-right: 0.2rem !important;
+    vertical-align: middle !important;
+  }
+
+  .user-table-cell-actions > button {
+    min-width: 60px !important;
+    padding: 0.3rem 0.5rem !important;
+    font-size: 0.85rem !important;
+    margin-right: 0.2rem !important;
+  }
+
+  /* Table head cell alignment fix */
+  .MuiTableCell-head {
+    vertical-align: middle !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    /* Remove extra left padding for first cell */
+  }
+  .MuiTableCell-head:first-child,
+  .MuiTableCell-body:first-child {
+    padding-left: 12px !important;
+  }
 }

@@ -47,10 +47,32 @@ const OrdersTable = ({ orders }) => {
         setPage(1);
     };
 
+    const isMobile = window.matchMedia("(max-width: 600px)").matches;
+    const filterSx = {
+        color: 'white',
+        fontSize: isMobile ? "1rem" : undefined,
+        width: isMobile ? "100%" : "10vw",
+        minWidth: isMobile ? "0" : undefined,
+        marginBottom: isMobile ? "0.5rem" : undefined,
+        '& .MuiOutlinedInput-notchedOutline': {
+            borderColor: '#374151',
+        },
+        '&:hover .MuiOutlinedInput-notchedOutline': {
+            borderColor: '#10b981',
+        },
+        '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
+            borderColor: '#10b981',
+        },
+        svg: { color: 'white' }
+    };
+
     return (
         <div className='order-wrap'>
             <div className="orders-header">
-                <h2>Orders</h2>
+                <h2 className="orders-title">
+                    <span className="orders-title-icon">📦</span>
+                    Orders
+                </h2>
                 <Button
                     variant="contained"
                     sx={{
@@ -64,18 +86,25 @@ const OrdersTable = ({ orders }) => {
                 >
                     Download PDF
                 </Button>
-
             </div>
-            <div className="filters">
+            <div className="filters" style={{
+                display: "flex",
+                flexDirection: isMobile ? "column" : "row",
+                gap: isMobile ? "0.5rem" : "1rem",
+                marginBottom: "1rem",
+                width: "100%"
+            }}>
                 <TextField
                     variant="outlined"
                     size="small"
                     placeholder="Search"
-                    style={{ width: '46.4vw' }}
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     sx={{
                         input: { color: 'white' },
+                        fontSize: isMobile ? "1rem" : undefined,
+                        width: isMobile ? "100%" : "46.4vw",
+                        marginBottom: isMobile ? "0.5rem" : undefined,
                         '& .MuiOutlinedInput-root': {
                             '& fieldset': { borderColor: '#374151' },
                             '&:hover fieldset': { borderColor: '#10b981' },
@@ -83,29 +112,15 @@ const OrdersTable = ({ orders }) => {
                         },
                     }}
                 />
-
                 <Select
                     variant="outlined"
                     size="small"
-                    style={{ width: '10vw' }}
+                    fullWidth={isMobile}
                     displayEmpty
                     value={statusFilter}
                     onChange={handleFilterChange(setStatusFilter)}
-                    sx={{
-                        color: 'white',
-                        '& .MuiOutlinedInput-notchedOutline': {
-                            borderColor: '#374151',
-                        },
-                        '&:hover .MuiOutlinedInput-notchedOutline': {
-                            borderColor: '#10b981',
-                        },
-                        '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
-                            borderColor: '#10b981',
-                        },
-                        svg: { color: 'white' }
-                    }}
+                    sx={filterSx}
                 >
-
                     <MenuItem value="">Filter by status</MenuItem>
                     <MenuItem value="Paid">Paid</MenuItem>
                     <MenuItem value="Refunded">Refunded</MenuItem>
@@ -114,25 +129,12 @@ const OrdersTable = ({ orders }) => {
                 <Select
                     variant="outlined"
                     size="small"
-                    style={{ width: '10vw' }}
+                    fullWidth={isMobile}
                     displayEmpty
-                    value={statusFilter}
-                    onChange={handleFilterChange(setStatusFilter)}
-                    sx={{
-                        color: 'white',
-                        '& .MuiOutlinedInput-notchedOutline': {
-                            borderColor: '#374151',
-                        },
-                        '&:hover .MuiOutlinedInput-notchedOutline': {
-                            borderColor: '#10b981',
-                        },
-                        '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
-                            borderColor: '#10b981',
-                        },
-                        svg: { color: 'white' }
-                    }}
+                    value={categoryFilter}
+                    onChange={handleFilterChange(setCategoryFilter)}
+                    sx={filterSx}
                 >
-
                     <MenuItem value="">All Categories</MenuItem>
                     <MenuItem value="Concert">Concert</MenuItem>
                     <MenuItem value="Workshop">Workshop</MenuItem>
@@ -140,25 +142,12 @@ const OrdersTable = ({ orders }) => {
                 <Select
                     variant="outlined"
                     size="small"
-                    style={{ width: '10vw' }}
+                    fullWidth={isMobile}
                     displayEmpty
-                    value={statusFilter}
-                    onChange={handleFilterChange(setStatusFilter)}
-                    sx={{
-                        color: 'white',
-                        '& .MuiOutlinedInput-notchedOutline': {
-                            borderColor: '#374151',
-                        },
-                        '&:hover .MuiOutlinedInput-notchedOutline': {
-                            borderColor: '#10b981',
-                        },
-                        '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
-                            borderColor: '#10b981',
-                        },
-                        svg: { color: 'white' }
-                    }}
+                    value={dateFilter}
+                    onChange={handleFilterChange(setDateFilter)}
+                    sx={filterSx}
                 >
-
                     <MenuItem value="">All Months</MenuItem>
                     {[...new Set(orders.map(o => getMonthYear(o.date)))].map((monthYear, idx) => (
                         <MenuItem key={idx} value={monthYear}>{monthYear}</MenuItem>
